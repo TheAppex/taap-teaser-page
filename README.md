@@ -1,25 +1,11 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# TAAP Teaser Page
+Building out the teaser / landing page for a startup project I'm working on. 
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+## Tech
+- GatsbyJS
+- ReactJS
+- Netlify
 
-## Install
-
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-npm run develop
-```
 
 ## Deploy
 
