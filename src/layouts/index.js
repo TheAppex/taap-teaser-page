@@ -10,6 +10,8 @@ import "../styles/main.scss"
 // david - importing the components
 import Header from '../components/Header/index.js';
 import SignUp from '../components/SignUp/index.js';
+import Content from '../components/Content/index.js';
+import Team from '../components/Team/index.js';
 import Footer from '../components/Footer/index.js';
 
 const TemplateWrapper = ({ children }) => (
@@ -26,6 +28,8 @@ const TemplateWrapper = ({ children }) => (
       {children()}
     </div>
     <SignUp />
+    <Content />
+    <Team />
     <Footer />
   </div>
 );
