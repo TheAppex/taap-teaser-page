@@ -2,13 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
+// david - importing scss
+import "../styles/normalize.scss"
+import "../styles/main.scss"
+
+
+// david - importing the components
 import Header from '../components/Header/index.js';
 import SignUp from '../components/SignUp/index.js';
 import Footer from '../components/Footer/index.js';
-
-
-import "../styles/main.scss"
-
 
 const TemplateWrapper = ({ children }) => (
   <div>

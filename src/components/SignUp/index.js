@@ -34,7 +34,7 @@ export default class SignUp extends React.Component {
     return (
       <div>
         <h3>Stay In Touch</h3>
-        <p>Stay updated on our progress as we near launch.</p>
+        <p>Sign up to be the first to know when we launch.</p>
         <form
           name="contact"
           method="post"
@@ -59,7 +59,7 @@ export default class SignUp extends React.Component {
             </label>
           </p>
           <p>
-            <button type="submit">Submit</button>
+            <button type="submit">Stay updated</button>
           </p>
           <p>Your email will never be sold nor disclosed.
           </p>
