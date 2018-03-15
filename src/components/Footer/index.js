@@ -12,10 +12,10 @@ const Footer = () => (
         
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <p style={{ margin: 0 }}>
         
          © 2018 | All rights reserved.
-      </h1>
+      </p>
     </div>
   </div>
 )
