@@ -6,8 +6,6 @@ import Header from '../components/Header';
 import SignUp from '../components/SignUp';
 
 
-import './index.css';
-
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
