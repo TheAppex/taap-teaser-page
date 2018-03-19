@@ -19,13 +19,13 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build:css": "postcss src/styles/index.css -o src/index.css",
+    "build:css": "postcss src/layouts/index.css -o src/index.css",
     "watch:css": "postcss src/styles/index.css -o src/index.css -w",
     "start": "npm run watch:css & react-scripts start",
-    "build": "npm run build:css && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "format": "prettier --write 'src/**/*.js'"
+    "build": "npm run build:css && gatsby build",
+    "develop": "npm run watch:css && gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "eslint": "^4.18.2",

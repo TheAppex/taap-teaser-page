@@ -4,7 +4,8 @@ import Helmet from 'react-helmet';
 
 // david - importing scss
 import "../styles/normalize.scss"
-import "../styles/main.scss"
+// import "../styles/main.scss"
+import "../styles/index.css"
 
 
 // david - importing the components
