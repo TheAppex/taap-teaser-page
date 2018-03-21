@@ -44,6 +44,22 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 */
 
 let colors = {
+  //-------------------------------------------------------------
+  // david - our brand colors
+  //-------------------------------------------------------------
+  'darkPrimary': '#388E3C',
+  'lightPrimary': '#C8E6C9',
+  'primary': '#4CAF50',
+  'textIcons': '#FFFFFF',
+  'accentColor': '#9E9E9E',
+  'primaryText': '#212121',
+  'secondaryText': '#757575',
+  'dividerColor': '#BDBDBD',
+
+//-------------------------------------------------------------
+// tailwindcss colors start here 
+//-------------------------------------------------------------
+
   'transparent': 'transparent',
 
   'black': '#22292f',
