@@ -28,10 +28,15 @@ const TemplateWrapper = ({ children }) => (
     <div>
       {children()}
     </div>
-    <SignUp />
+
     <Content />
+
+    <SignUp />
+
     <Team />
+
     <Footer />
+
   </div>
 );
 

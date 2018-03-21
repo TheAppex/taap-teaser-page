@@ -3,10 +3,9 @@ import React from 'react';
 const IndexPage = () => (
   <div>
     <h1 className="container mx-auto font-title">The Android Apps Project</h1>
-    <h3>Bringing you the Best Android App reviews.</h3>
+    <h4>uncovering the very best Android apps.</h4>
     <p>Period.</p>
-    <p>Right now we are in stealth mode, assembling an all-star team.
-    Get ready for the most in-depth and most comprehensive reviews for all the best Android apps.
+    <p>
     </p>
     <p>(Like <a href="https://wirecutter.com">wirecutter</a> but for Android apps.)</p>
   </div>
