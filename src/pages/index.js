@@ -2,7 +2,7 @@ import React from 'react';
 
 const IndexPage = () => (
   <div>
-    <h1>The Android Apps Project</h1>
+    <h1 className="container mx-auto">The Android Apps Project</h1>
     <h3>Bringing you the Best Android App reviews.</h3>
     <p>Period.</p>
     <p>Right now we are in stealth mode, assembling an all-star team.
