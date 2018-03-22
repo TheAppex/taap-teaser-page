@@ -17,9 +17,9 @@ const Content = () => (
     </div>
 
     <div>
-      <h3 className="font-title">Our Mission</h3>
-      <img className="h-64" src={analyzeAllTheThings}></img> 
-      <ul>
+      <h3 className="font-title flex">Our Mission</h3>
+      <img className="h-64 w-1/2" src={analyzeAllTheThings}></img> 
+      <ul className="w-1/2">
         <li className="font-body">Provide the most comprehensive 
         reviews for the best Android Apps, 
         like the world has never seen before.</li>
@@ -29,15 +29,18 @@ const Content = () => (
     </div>
 
     <div>
-      <h4 className="font-title">Let us do the hard work and find the best apps. 
+      <h4 className="font-title text-center container">Let us do the hard work and find the best apps. 
       So you can get on enjoying life.</h4>
     </div>
 
-    <div>
-      <img className="h-64" src={spaceShip}></img> 
-      <p className="font-body">Launching soon</p>
-      <button className="font-title">Stay Updated</button>
-      <p><a href="#" className="font-body">Here’s a preview</a> of what our reviews will look like on Medium.</p>
+    <div className="flex">
+      <img className="h-64 w-1/2" src={spaceShip}></img>
+      <div className="w-1/2">
+        <p className="font-body">Launching soon</p>
+        <button className="font-title">Stay Updated</button>
+      </div>
+
+      <p><a href="#" className="font-body text-center container">Here’s a preview</a> of what our reviews will look like on Medium.</p>
     </div>
 
 

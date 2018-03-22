@@ -18,17 +18,17 @@ const Team = () => (
       }}
     >
       <ul className="font-body flex">A Project By:</ul>
-        <li className="flex-1">
+        <li className="w-1/3">
           <img className="h-12 rounded-full" src={davidHeadshot} alt=""></img>
           <p className="font-body">David Lindahl</p>
           <a href="#" target="_blank" className="font-body">@austriker27</a>
         </li>
-        <li className="flex-1">
+        <li className="w-1/3">
           <img className="h-12 rounded-full" src={mattHeadshot} alt=""></img>
           <p className="font-body">Matt Lawrence</p>
           <a href="#" target="_blank" className="font-body">@MLProductions01</a>
         </li>
-        <li className="flex-1">
+        <li className="w-1/3">
           <img className="h-12 rounded-full" src={kerryHeadshot} alt=""></img>
           <p className="font-body">Kerry Morrison</p>
           <a href="#" target="_blank" className="font-body">@kmore</a>
