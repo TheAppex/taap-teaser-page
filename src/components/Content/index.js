@@ -7,18 +7,18 @@ import analyzeAllTheThings from "../../assets/undraw_data_xmfy.svg";
 import spaceShip from "../../assets/undraw_To_the_stars_qhyy.png";
 
 const Content = () => (
-  <div>
+  <div className="h-64">
     <div className="flex">
       <div className="flex-1">
-        <p className="font-body">Overwhelmed by how many different apps there are for ____ ??</p>
-        <h3 className="font-title">We are too.</h3>
+        <p className="font-body align-middle">Overwhelmed by how many different apps there are for ____ ??</p>
+        <h3 className="font-title align-middle">We are too.</h3>
       </div>
-      <img className="flex-1 h-64" src={phoneApps}></img> 
+      <img className="flex-1 h-48 align-middle" src={phoneApps}></img> 
     </div>
 
-    <div>
+    <div className="h-64">
       <h3 className="font-title flex">Our Mission</h3>
-      <img className="h-64 w-1/2" src={analyzeAllTheThings}></img> 
+      <img className="w-1/2 h-48" src={analyzeAllTheThings}></img> 
       <ul className="w-1/2">
         <li className="font-body">Provide the most comprehensive 
         reviews for the best Android Apps, 
@@ -28,19 +28,19 @@ const Content = () => (
       </ul>
     </div>
 
-    <div>
+    <div className="h-64">
       <h4 className="font-title text-center container">Let us do the hard work and find the best apps. 
       So you can get on enjoying life.</h4>
     </div>
 
-    <div className="flex">
-      <img className="h-64 w-1/2" src={spaceShip}></img>
+    <div className="flex h-64">
+      <img className="h-48 w-1/2" src={spaceShip}></img>
       <div className="w-1/2">
         <p className="font-body">Launching soon</p>
         <button className="font-title">Stay Updated</button>
       </div>
 
-      <p><a href="#" className="font-body text-center container">Here’s a preview</a> of what our reviews will look like on Medium.</p>
+      <p className="font-body text-center container h-32"><a href="#">Here’s a preview</a> of what our reviews will look like on Medium.</p>
     </div>
 
 

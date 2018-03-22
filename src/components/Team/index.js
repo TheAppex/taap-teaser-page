@@ -8,7 +8,7 @@ import kerryHeadshot from "../../assets/kerry-twitter.jpg";
 
 const Team = () => (
   <div>
-    <div>
+    <div className="h-64">
       <ul className="font-body flex">A Project By:</ul>
         <li className="w-1/3">
           <img className="h-12 rounded-full" src={davidHeadshot} alt=""></img>
