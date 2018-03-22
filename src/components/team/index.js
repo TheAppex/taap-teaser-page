@@ -12,24 +12,24 @@ const Team = () => (
         
       }}
     >
-      <ul style={{ margin: 0 }}>
+      <ul className="font-body">
         
          A Project By:
       </ul>
         <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/felipebsb/128.jpg" alt=""></img>
-          <p>David Lindahl</p>
-          <a href="#" target="_blank">@austriker27</a>
+          <img src="../../assets/david-twitter.jpg" alt=""></img>
+          <p className="font-body">David Lindahl</p>
+          <a href="#" target="_blank" className="font-body">@austriker27</a>
         </li>
         <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/felipebsb/128.jpg" alt=""></img>
-          <p>Matt Lawrence</p>
-          <a href="#" target="_blank">@twitterhandle</a>
+          <img src="../../assets/matt-twitter.jpg" alt=""></img>
+          <p className="font-body">Matt Lawrence</p>
+          <a href="#" target="_blank" className="font-body">@MLProductions01</a>
         </li>
         <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/felipebsb/128.jpg" alt=""></img>
-          <p>Zaphod Beeblebrox</p>
-          <a href="#" target="_blank">@twitterhandle</a>
+          <img src="../../assets/kerry-twitter.jpg" alt=""></img>
+          <p className="font-body">Kerry Morrison</p>
+          <a href="#" target="_blank" className="font-body">@kmore</a>
         </li>
     </div>
   </div>
