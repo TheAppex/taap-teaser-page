@@ -213,6 +213,10 @@ module.exports = {
       'Playfair-Display',
       'serif',
     ],
+    'body': [
+      'Roboto',
+      'sans-serif',
+    ],
     'sans': [
       'system-ui',
       'BlinkMacSystemFont',
