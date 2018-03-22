@@ -69,3 +69,11 @@
   * @import "utilities/skew-transforms";
   */
  
+
+
+/* david - this is for the list under our mission statement giving it bullet points that are check marks */
+.mission-list li {
+  background-image: url("../assets/zondicons-checkmark-outline.svg");background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+} 

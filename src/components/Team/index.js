@@ -9,7 +9,7 @@ import kerryHeadshot from "../../assets/kerry-twitter.jpg";
 const Team = () => (
   <div>
     <div className="h-64">
-      <ul className="font-body flex">A Project By:</ul>
+      <ul className="font-body flex list-reset">A Project By:
         <li className="w-1/3">
           <img className="h-12 rounded-full" src={davidHeadshot} alt=""></img>
           <p className="font-body">David Lindahl</p>
@@ -25,6 +25,7 @@ const Team = () => (
           <p className="font-body">Kerry Morrison</p>
           <a href="#" target="_blank" className="font-body">@kmore</a>
         </li>
+      </ul>
     </div>
   </div>
 )

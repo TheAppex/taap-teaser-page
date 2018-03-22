@@ -19,7 +19,7 @@ const Content = () => (
     <div className="h-64">
       <h3 className="font-title flex">Our Mission</h3>
       <img className="w-1/2 h-48" src={analyzeAllTheThings}></img> 
-      <ul className="w-1/2">
+      <ul className="w-1/2 list-reset mission-list">
         <li className="font-body">Provide the most comprehensive 
         reviews for the best Android Apps, 
         like the world has never seen before.</li>
@@ -37,7 +37,10 @@ const Content = () => (
       <img className="h-48 w-1/2" src={spaceShip}></img>
       <div className="w-1/2">
         <p className="font-body">Launching soon</p>
-        <button className="font-title">Stay Updated</button>
+        <button className="bg-darkPrimary hover:bg-blue-light text-white font-bold py-2 px-4 border-b-4 border-lightPrimary hover:border-blue rounded">
+          <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
+          <span>Stay Updated</span>
+        </button>
       </div>
 
       <p className="font-body text-center container h-32"><a href="#">Here’s a preview</a> of what our reviews will look like on Medium.</p>

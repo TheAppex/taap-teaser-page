@@ -31,8 +31,6 @@ const TemplateWrapper = ({ children }) => (
 
     <Content />
 
-    <SignUp />
-
     <Team />
 
     <Footer />
