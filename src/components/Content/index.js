@@ -6,12 +6,12 @@ const Content = () => (
     <div className="flex">
       <p className="font-body flex-1">Overwhelmed by how many different apps there are for ____ ??</p>
       <h3 className="font-title flex-1">We are too.</h3>
-     <img></img> 
+     <img className="" src="../../assets/phone-apps.svg"></img> 
     </div>
 
     <div>
       <h3 className="font-title">Our Mission</h3>
-      <img></img>
+      <img className="" src="../../assets/undraw_data_xmfy.svg"></img> 
       <ul>
         <li className="font-body">Provide the most comprehensive 
         reviews for the best Android Apps, 
