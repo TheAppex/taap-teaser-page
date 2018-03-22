@@ -1,17 +1,24 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+// david - importing images
+import phoneApps from "../../assets/undraw_mobile_apps.svg";
+import analyzeAllTheThings from "../../assets/undraw_data_xmfy.svg";
+import spaceShip from "../../assets/undraw_To_the_stars_qhyy.png";
+
 const Content = () => (
   <div>
     <div className="flex">
-      <p className="font-body flex-1">Overwhelmed by how many different apps there are for ____ ??</p>
-      <h3 className="font-title flex-1">We are too.</h3>
-     <img className="" src="../../assets/phone-apps.svg"></img> 
+      <div className="flex-1">
+        <p className="font-body">Overwhelmed by how many different apps there are for ____ ??</p>
+        <h3 className="font-title">We are too.</h3>
+      </div>
+      <img className="flex-1 h-64" src={phoneApps}></img> 
     </div>
 
     <div>
       <h3 className="font-title">Our Mission</h3>
-      <img className="" src="../../assets/undraw_data_xmfy.svg"></img> 
+      <img className="h-64" src={analyzeAllTheThings}></img> 
       <ul>
         <li className="font-body">Provide the most comprehensive 
         reviews for the best Android Apps, 
@@ -27,7 +34,7 @@ const Content = () => (
     </div>
 
     <div>
-      <img></img> 
+      <img className="h-64" src={spaceShip}></img> 
       <p className="font-body">Launching soon</p>
       <button className="font-title">Stay Updated</button>
       <p><a href="#" className="font-body">Here’s a preview</a> of what our reviews will look like on Medium.</p>
