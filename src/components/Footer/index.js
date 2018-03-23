@@ -8,13 +8,13 @@ import facebookSVG from "../../assets/icon-facebook.svg";
 
 
 const Footer = () => (
-  <div className="h-64">
-    <div className="flex container">
-      <a className="w-1/3 justify-center" href="#"><img className="h-6 fill-current text-darkPrimary rounded" src={twitterSVG}></img></a>
-      <a className="w-1/3 justify-center" href="#"><img className="h-6 fill-current text-darkPrimary rounded" src={mediumSVG}></img></a>
-      <a className="w-1/3 justify-center" href="#"><img className="h-6 fill-current text-darkPrimary rounded" src={facebookSVG}></img></a>
+  <div className="h-64 p-3">
+    <div className="flex justify-center">
+      <a href="#"><img className="h-10 fill-current text-darkPrimary rounded m-2" src={twitterSVG}></img></a>
+      <a href="#"><img className="h-10 fill-current text-darkPrimary rounded m-2" src={mediumSVG}></img></a>
+      <a href="#"><img className="h-10 fill-current text-darkPrimary rounded m-2" src={facebookSVG}></img></a>
     </div>
-    <p className="justify-center"> © 2018 | All rights reserved.</p>
+    <p className="w-full text-center"> © 2018 | All rights reserved.</p>
   </div>
 )
 

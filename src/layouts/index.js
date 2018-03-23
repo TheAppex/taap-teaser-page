@@ -28,13 +28,13 @@ const TemplateWrapper = ({ children }) => (
     <div>
       {children()}
     </div>
+	
+		<Content />
 
-    <Content />
+		<Team />
 
-    <Team />
-
-    <Footer />
-
+		<Footer />
+	
   </div>
 );
 
