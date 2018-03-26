@@ -12,7 +12,7 @@ const Content = () => (
 		<div className="flex content-around justify-center h-64 container mx-auto px-4">
 			<div>
 			<p className="text-lg font-body align-middle">Overwhelmed by how many different apps there are for ____ ??</p>
-			<p className="text-3xl font-title align-middle highlight">We are too.</p>
+			<p className="text-3xl font-title align-middle font-bold"><span className="highlight">We are too.</span></p>
 			</div>
 			<img className="h-48 align-middle" src={phoneApps}></img> 
 		</div>
@@ -34,8 +34,8 @@ const Content = () => (
 		</div>
 		
 		<div className="flex items-center flex-wrap justify-center h-48 text-center w-full container mx-auto px-4">
-			<p className="text-3xl font-title text-center highlight">We do the hard work and find the best apps.</p>
-			<p className="text-3xl font-title text-center highlight">So you can get to enjoying life.</p>
+			<p className="text-3xl font-title text-center w-full"><span className="highlight">We do the hard work and find the best apps.</span></p>
+			<p className="text-3xl font-title text-center w-full"><span className="highlight">So you can get to enjoying life.</span></p>
 		</div>
 
 		<div className="flex items-center justify-center h-64 container mx-auto px-4">
