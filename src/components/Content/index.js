@@ -50,7 +50,7 @@ const Content = () => (
 		</div>
 
 		<div className="flex items-center justify-center h-64 text-center w-full container mx-auto px-4">
-			<p className="text-lg font-body text-center">Can't wait? Here's a <a href="#" className="highlight text-darkPrimary hover:text-primaryText">sneak peek</a> article on Medium.</p>
+			<p className="text-lg font-body text-center">Can't wait? Here's a <a href="#" className="highlight text-darkPrimary hover:text-primaryText no-underline">sneak peek</a> article on Medium.</p>
 		</div>
 
   </div>
