@@ -18,7 +18,7 @@ const Content = () => (
 		</div>
 		
 		<div className="h-64">
-			<p className="text-3xl font-title text-center container mx-auto px-4">Our Mission</p>
+			<p className="text-3xl font-title text-center container mx-auto px-2 py-2 bg-lightPrimary rounded-sm">Our Mission</p>
 			<div className="flex justify-around items-center bg-lightPrimary pt-8 pb-8">
 				<div><img className=" h-48" src={analyzeAllTheThings}></img> </div>
 				<div className="w-1/2">
