@@ -33,9 +33,9 @@ const Content = () => (
 			</div>
 		</div>
 		
-		<div className="flex items-center justify-center h-48 text-center w-full container mx-auto px-4">
-			<p className="container text-3xl font-title text-center highlight">We do the hard work and find the best apps.</p>
-			<p className="container text-3xl font-title text-center highlight">So you can get to enjoying life.</p>
+		<div className="flex items-center flex-wrap justify-center h-48 text-center w-full container mx-auto px-4">
+			<p className="text-3xl font-title text-center highlight">We do the hard work and find the best apps.</p>
+			<p className="text-3xl font-title text-center highlight">So you can get to enjoying life.</p>
 		</div>
 
 		<div className="flex items-center justify-center h-64 container mx-auto px-4">
