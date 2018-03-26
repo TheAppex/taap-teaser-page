@@ -78,3 +78,28 @@
   background-repeat: no-repeat;
   padding-left: 2rem;
 } 
+
+/* david - this is the highlight to some of the subtitles */
+
+.highlight {
+  display: inline-block;
+  position: relative;
+}
+
+.highlight:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  display: inline-block;
+  bottom: 1px;
+  left: 0px;
+  border-bottom: 8px solid #C8E6C9;
+  margin-top: 5px;
+  width: 100%;
+  /* height: 8px; */
+}
+
+.subtitle-highlight {
+  border-bottom: 8px solid #388E3C;
+
+}
