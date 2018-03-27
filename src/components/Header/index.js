@@ -6,7 +6,7 @@ import Link from 'gatsby-link';
 const Header = () => (
   <div
     style={{
-      border: `6px solid #388E3C`,
+      border: `4px solid #388E3C`,
       width: '100%',
     }}
   >
