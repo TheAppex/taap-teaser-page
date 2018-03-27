@@ -10,7 +10,7 @@ const Content = () => (
 	
   <div className="flex flex-col">
 		<div className="flex content-around justify-center py-8 my-8 container mx-auto px-4">
-			<div className="px-8 my-auto">
+			<div className="px-8 mx-8 my-auto">
 				<p className="text-lg font-body align-middle">Overwhelmed by how many different apps there are for ____ ??</p>
 				<p className="text-3xl font-title align-middle font-bold"><span className="highlight">We are too.</span></p>
 			</div>
@@ -51,7 +51,7 @@ const Content = () => (
 		</div>
 
 		<div className="flex items-center justify-center py-8 my-8 text-center w-full container mx-auto px-4">
-			<p className="text-lg font-body text-center">Can't wait? Here's a <a href="#" className="highlight text-darkPrimary hover:text-primaryText no-underline">sneak peek</a> article on Medium.</p>
+			<p className="text-lg font-body text-center">Can't wait? Here's a <a href="#" className="highlight text-primaryText hover:text-darkPrimary no-underline">sneak peek</a> article on Medium.</p>
 		</div>
 
   </div>
