@@ -10,9 +10,9 @@ const Content = () => (
 	
   <div className="flex flex-col">
 		<div className="flex content-around justify-center py-8 my-8 container mx-auto px-4">
-			<div>
-			<p className="text-lg font-body align-middle">Overwhelmed by how many different apps there are for ____ ??</p>
-			<p className="text-3xl font-title align-middle font-bold"><span className="highlight">We are too.</span></p>
+			<div className="px-8 my-auto">
+				<p className="text-lg font-body align-middle">Overwhelmed by how many different apps there are for ____ ??</p>
+				<p className="text-3xl font-title align-middle font-bold"><span className="highlight">We are too.</span></p>
 			</div>
 			<img className="h-48 align-middle" src={phoneApps}></img> 
 		</div>
@@ -41,7 +41,7 @@ const Content = () => (
 		<div className="flex items-center justify-center container mx-auto px-4 py-8 my-8">
 			<img className="h-48 w-1/3" src={spaceShip}></img>
 			<div className="flex items-center flex-col">
-			<p className="text-lg font-body mb-2 text-center">Launching soon. <br></br>
+			<p className="text-lg font-body mb-2 text-center px-8">Launching soon. <br></br>
 			Get notified when we go live and vote for the category you want reviewed first.</p>
 			<button className="bg-darkPrimary hover:bg-dividerColor text-white font-bold py-2 px-4 border-b-4 border-lightPrimary hover:border-secondaryText rounded">
 				<svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
