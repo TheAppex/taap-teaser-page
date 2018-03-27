@@ -9,7 +9,7 @@ import spaceShip from "../../assets/undraw_To_the_stars_qhyy.png";
 const Content = () => (
 	
   <div className="flex flex-col">
-		<div className="flex content-around justify-center h-64 container mx-auto px-4">
+		<div className="flex content-around justify-center py-8 my-8 container mx-auto px-4">
 			<div>
 			<p className="text-lg font-body align-middle">Overwhelmed by how many different apps there are for ____ ??</p>
 			<p className="text-3xl font-title align-middle font-bold"><span className="highlight">We are too.</span></p>
@@ -17,7 +17,7 @@ const Content = () => (
 			<img className="h-48 align-middle" src={phoneApps}></img> 
 		</div>
 		
-		<div className="h-64">
+		<div className="">
 			<p className="text-3xl font-title text-center container mx-auto px-2 py-2 bg-lightPrimary rounded-t-lg w-1/3 font-bold">Our Mission</p>
 			<div className="flex justify-around items-center bg-lightPrimary pt-8 pb-8">
 				<div><img className=" h-48" src={analyzeAllTheThings}></img> </div>
@@ -33,12 +33,12 @@ const Content = () => (
 			</div>
 		</div>
 		
-		<div className="flex items-center flex-wrap justify-center h-48 text-center w-full container mx-auto px-4">
+		<div className="flex items-center flex-wrap justify-center text-center w-full container mx-auto px-4 py-8 my-8">
 			<p className="text-3xl font-title text-center w-full font-bold"><span className="highlight">We do the hard work and find the best apps.</span></p>
 			<p className="text-3xl font-title text-center w-full font-bold"><span className="highlight">So you can get to enjoying life.</span></p>
 		</div>
 
-		<div className="flex items-center justify-center h-64 container mx-auto px-4">
+		<div className="flex items-center justify-center container mx-auto px-4 py-8 my-8">
 			<img className="h-48 w-1/3" src={spaceShip}></img>
 			<div className="flex items-center flex-col">
 			<p className="text-lg font-body mb-2 text-center">Launching soon. <br></br>
@@ -50,7 +50,7 @@ const Content = () => (
 			</div>
 		</div>
 
-		<div className="flex items-center justify-center h-64 text-center w-full container mx-auto px-4">
+		<div className="flex items-center justify-center py-8 my-8 text-center w-full container mx-auto px-4">
 			<p className="text-lg font-body text-center">Can't wait? Here's a <a href="#" className="highlight text-darkPrimary hover:text-primaryText no-underline">sneak peek</a> article on Medium.</p>
 		</div>
 
