@@ -14,7 +14,7 @@ const Footer = () => (
       <a href="#"><img className="h-4 fill-current text-darkPrimary rounded m-2" src={mediumSVG}></img></a>
       <a href="#"><img className="h-4 fill-current text-darkPrimary rounded m-2" src={facebookSVG}></img></a>
     </div>
-    <p className="text-xs w-full text-center"> © 2018 | All rights reserved.</p>
+    <p className="text-primaryText text-xs w-full text-center"> © 2018 | All rights reserved.</p>
   </div>
 )
 
