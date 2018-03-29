@@ -18,17 +18,19 @@ const Content = () => (
 		</div>
 		
 		<div className="">
-			<p className="text-primaryText text-3xl font-title text-center container mx-auto px-2 py-2 bg-lightPrimary rounded-t-lg w-1/3 font-bold">Our Mission</p>
+			<p className="text-primaryText text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-1/3 font-bold">Our Mission</p>
 			<div className="flex justify-around items-center bg-lightPrimary pt-8 pb-8">
-				<div><img className=" h-48" src={analyzeAllTheThings}></img> </div>
+				<div>
+					<img className=" h-48" src={analyzeAllTheThings}></img> 
+				</div>
 				<div className="w-1/2">
-				<ul className="list-reset mission-list">
-				<li className="text-primaryText text-sm font-body pb-4">Provide the most comprehensive 
-				reviews for the best Android Apps, 
-				like the world has never seen before.</li>
-				<li className="text-primaryText text-sm font-body pb-4">Exhaustively research and present the best apps in popular categories like calendars, photography, & email</li>
-				<li className="text-primaryText text-sm font-body">Judge apps based on overall design, user experience and usability with highlights for indie developers</li>
-				</ul>
+					<ul className="list-reset mission-list w-1/2">
+						<li className="text-primaryText text-sm font-body pb-4 w-full">Provide the most comprehensive 
+						reviews for the best Android Apps, 
+						like the world has never seen before.</li>
+						<li className="text-primaryText text-sm font-body pb-4 w-full">Exhaustively research and present the best apps in popular categories like calendars, photography, & email</li>
+						<li className="text-primaryText text-sm font-body pb-4 w-full">Judge apps based on overall design, user experience and usability with highlights for indie developers</li>
+					</ul>
 				</div>
 			</div>
 		</div>
