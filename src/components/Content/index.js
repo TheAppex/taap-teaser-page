@@ -10,21 +10,21 @@ const Content = () => (
 	
   <div className="flex flex-col">
 		<div className="flex content-around justify-center py-8 my-8 container mx-auto px-4">
-			<div className="px-8 mx-8 my-auto">
+			<div className="px-8 mx-8 my-auto w-1/2">
 				<p className="text-primaryText text-lg font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>
 				<p className="text-primaryText text-3xl font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
 			</div>
-			<img className="h-48 align-middle" src={phoneApps}></img> 
+			<img className="h-48 align-middle w-1/2" src={phoneApps}></img> 
 		</div>
 		
 		<div className="">
 			<p className="text-primaryText text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-1/3 font-bold">Our Mission</p>
 			<div className="flex justify-around items-center bg-lightPrimary pt-8 pb-8">
-				<div>
-					<img className=" h-48" src={analyzeAllTheThings}></img> 
+				<div className="w-1/2">
+					<img className="px-8" src={analyzeAllTheThings}></img> 
 				</div>
 				<div className="w-1/2">
-					<ul className="list-reset mission-list">
+					<ul className="list-reset mission-list px-8">
 						<li className="text-primaryText text-sm font-body pb-4 leading-normal">Provide the most comprehensive 
 						reviews for the best Android Apps, 
 						like the world has never seen before.</li>
@@ -36,8 +36,8 @@ const Content = () => (
 		</div>
 		
 		<div className="flex items-center flex-wrap justify-center text-center w-full container mx-auto px-4 py-8 my-8 ">
-			<p className="text-primaryText text-3xl font-title text-center w-full font-bold leading-normal"><span className="highlight">We do the hard work and find the best apps.</span></p>
-			<p className="text-primaryText text-3xl font-title text-center w-full font-bold leading-normal"><span className="highlight">So you can get to enjoying life.</span></p>
+			<p className="text-primaryText text-xl font-title text-center w-full font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl sm:max-w-full"><span className="highlight">We do the hard work and find the best apps.</span></p>
+			<p className="text-primaryText text-xl font-title text-center w-full font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl sm:max-w-full"><span className="highlight">So you can get to enjoying life.</span></p>
 		</div>
 
 		<div className="flex items-center justify-center container mx-auto px-4 py-8 my-8">
