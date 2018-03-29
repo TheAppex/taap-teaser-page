@@ -36,8 +36,14 @@ const Content = () => (
 		</div>
 		
 		<div className="flex items-center flex-wrap justify-center text-center w-full container mx-auto px-4 py-8 my-8 ">
-			<div className=""><p className="text-primaryText text-xl font-title text-center font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl"><span className="highlight">We do the hard work and find the best apps.</span></p></div>
-			<div className=""><p className="text-primaryText text-xl font-title text-center font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl"><span className="highlight">So you can get to enjoying life.</span></p></div>
+			<div className="w-full">
+				<p className="text-primaryText text-xl font-title text-center font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl"><span className="highlight">We do the hard work and find the best apps.</span>
+				</p>
+			</div>
+			<div className="w-full">
+				<p className="text-primaryText text-xl font-title text-center font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl"><span className="highlight">So you can get to enjoying life.</span>
+				</p>
+			</div>
 		</div>
 
 		<div className="flex items-center justify-around container mx-auto px-4 py-8 my-8">
