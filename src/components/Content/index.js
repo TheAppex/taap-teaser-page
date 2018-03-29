@@ -9,7 +9,7 @@ import spaceShip from "../../assets/undraw_To_the_stars_qhyy.png";
 const Content = () => (
 	
   <div className="flex flex-col">
-		<div className="flex content-around justify-center py-8 my-8 container mx-auto px-4">
+		<div className="flex content-around py-8 my-8 container mx-auto px-4">
 			<div className="px-8 mx-8 my-auto w-1/2">
 				<p className="text-primaryText text-lg font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>
 				<p className="text-primaryText text-3xl font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
@@ -36,11 +36,11 @@ const Content = () => (
 		</div>
 		
 		<div className="flex items-center flex-wrap justify-center text-center w-full container mx-auto px-4 py-8 my-8 ">
-			<p className="text-primaryText text-xl font-title text-center w-full font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl sm:max-w-full"><span className="highlight">We do the hard work and find the best apps.</span></p>
-			<p className="text-primaryText text-xl font-title text-center w-full font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl sm:max-w-full"><span className="highlight">So you can get to enjoying life.</span></p>
+			<div className=""><p className="text-primaryText text-xl font-title text-center font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl"><span className="highlight">We do the hard work and find the best apps.</span></p></div>
+			<div className=""><p className="text-primaryText text-xl font-title text-center font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl"><span className="highlight">So you can get to enjoying life.</span></p></div>
 		</div>
 
-		<div className="flex items-center justify-center container mx-auto px-4 py-8 my-8">
+		<div className="flex items-center justify-around container mx-auto px-4 py-8 my-8">
 			<img className="h-48 w-1/3" src={spaceShip}></img>
 			<div className="flex items-center flex-col">
 			<p className="text-primaryText text-lg font-body mb-2 text-center px-8 max-w-xs leading-normal">Launching soon. <br></br>

@@ -9,7 +9,7 @@ import kerryHeadshot from "../../assets/kerry-twitter.jpg";
 const Team = () => (
   <div className="p-3 container mx-auto px-4 py-8 my-8">
 	  <p className="text-primaryText text-basemb-8">A Project By:</p>
-      <div className="font-body flex-row justify-around px-2 py-4">
+      <div className="font-body flex-row px-2 py-4">
         
 				<div className="flex items-center">
 					<img className="h-12 rounded-full" src={davidHeadshot} alt=""></img>

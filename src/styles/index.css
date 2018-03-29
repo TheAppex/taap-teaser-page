@@ -97,3 +97,20 @@
   margin-top: 5px;
   width: 100%;
 }
+
+
+/* 
+david - another way is just to do a bottom border but then I dont know how to position it so it overlaps the text a bit
+
+also seems like adding this below line should help but it doesnt:
+  box-decoration-break: clone;
+
+
+.highlight {
+  display: inline;
+  position: relative;
+  z-index: -1;
+  bottom: -2px;
+  left: 0px;
+  border-bottom: 8px solid #C8E6C9;
+} */
