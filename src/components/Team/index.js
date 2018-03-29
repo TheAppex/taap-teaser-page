@@ -11,7 +11,7 @@ const Team = () => (
 	  <p className="text-primaryText text-basemb-8">A Project By:</p>
       <div className="font-body flex-row sm:flex-col md:flex-col lg:flex-row xl:flex-row px-2 py-4">
         
-				<div className="flex items-center ">
+				<div className="flex items-center">
 					<div className="justify-around">
 						<img className="h-12 rounded-full" src={davidHeadshot} alt=""></img>
 						
