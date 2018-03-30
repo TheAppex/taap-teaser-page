@@ -114,3 +114,11 @@ also seems like adding this below line should help but it doesnt:
   left: 0px;
   border-bottom: 8px solid #C8E6C9;
 } */
+
+
+/* 
+david - using the biggest font class to grab just the title and a little shadow to it  */
+
+.text-5xl {
+  text-shadow: 2px 2px #C8E6C9;
+}
