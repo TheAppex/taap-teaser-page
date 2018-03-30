@@ -73,8 +73,8 @@
 
 /* david - this is for the list under our mission statement giving it bullet points that are check marks */
 .mission-list li {
-  background-image: url("../assets/zondicons-checkmark-outline.svg");background-position: 0 0;
-  background-size: 1.6rem 1.6rem;
+  background-image: url("../assets/zondicons-checkmark-outline-388E3C.svg");background-position: 0 0;
+  background-size: 1.1rem 1.1rem;
   background-repeat: no-repeat;
   padding-left: 2rem;
 } 
@@ -82,18 +82,49 @@
 /* david - this is the highlight to some of the subtitles */
 
 .highlight {
-  display: inline-block;
-  position: relative;
+  /* border-bottom-color: #C8E6C9;
+  border-bottom-width: 5px;  
+  border-bottom-style:outset; */
+  border-bottom: 5px inset #C8E6C9;
 }
 
+/* david - this is the old code that was for the psuedo element highlight but im commenting it out because im not sure we can do multilines in css
 .highlight:after {
   content: "";
   position: absolute;
   z-index: -1;
   display: inline-block;
-  bottom: 1px;
+  bottom: 8px;
   left: 0px;
   border-bottom: 8px solid #C8E6C9;
   margin-top: 5px;
   width: 100%;
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+} */
+
+
+/* 
+david - another way is just to do a bottom border but then I dont know how to position it so it overlaps the text a bit
+
+also seems like adding this below line should help but it doesnt:
+  box-decoration-break: clone;
+
+
+.highlight {
+  display: inline;
+  position: relative;
+  z-index: -1;
+  bottom: -2px;
+  left: 0px;
+  border-bottom: 8px solid #C8E6C9;
+} */
+
+
+/* 
+david - using the biggest font class to grab just the title and a little shadow to it  */
+
+.text-5xl {
+  text-shadow: 2px 2px #C8E6C9;
 }
