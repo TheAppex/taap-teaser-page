@@ -9,42 +9,44 @@ import kerryHeadshot from "../../assets/kerry-twitter.jpg";
 const Team = () => (
   <div className="antialiased p-3 container mx-auto px-4 py-8 my-8">
 	  <p className="text-primaryText text-basemb-8">A Project By:</p>
-      <div className="font-body flex-row sm:flex-col md:flex-col lg:flex-row xl:flex-row px-2 py-4">
-        
-				<div className="flex items-center">
-					<div className="justify-around">
-						<img className="h-12 rounded-full" src={davidHeadshot} alt=""></img>
-						
-						<div className="flex-col">
-							<p className="text-primaryText text-base font-body ml-2 w-full">David Lindahl </p>
-							<a href="#" target="_blank" className="text-primaryText text-base font-body ml-2 w-full">@austriker27</a>
-						</div>
-					</div>
-				</div>
-
-				<div className="flex items-center">
-					<div className="justify-around">
-						<img className="h-12 rounded-full" src={mattHeadshot} alt=""></img>
-						
-						<div className="flex-col">
-							<p className="text-primaryText text-base font-body ml-2 w-full">Matt Lawrence </p>
-							<a href="#" target="_blank" className="text-primaryText text-base font-body ml-2 w-full">@MLProductions01</a> 
-						</div>
-					</div>
-				</div>
-
-				<div className="flex items-center">
-					<div className="justify-around">
-						<img className="h-12 rounded-full" src={kerryHeadshot} alt=""></img>
-						<div className="flex-col">
-							<p className="text-primaryText text-base font-body ml-2 w-full">Kerry Morrison </p>
-							<a href="#" target="_blank" className="text-primaryText text-base font-body ml-2 w-full">@kmore</a>
-						</div>
-					</div>
-				</div>
 		
-			</div>
-    
+		<div className="flex-col sm:flex sm:flex-row font-body justify-around content-center md:px-2 py-4">
+				
+				<div className="flex justify-center items-center flex-col sm:flex-col md:flex-row text-center sm:text-left py-6 sm:py-0">
+					<div>
+						<img className="h-12 rounded-full" src={davidHeadshot} alt=""></img>
+					</div>	
+					
+					<div className="sm:ml-0 sm:text-center md:text-left md:ml-2">
+						<p className="text-primaryText text-base font-body w-full">David Lindahl </p>
+						<a href="#" target="_blank" className="text-primaryText text-base font-body w-full">@austriker27</a>
+					</div>
+					
+				</div>
+				
+				<div className="flex justify-center items-center flex-col sm:flex-col md:flex-row text-center sm:text-left py-6 sm:py-0">
+					<div>
+						<img className="h-12 rounded-full" src={mattHeadshot} alt=""></img>
+					</div>
+					
+					<div className="sm:ml-0 sm:text-center md:text-left md:ml-2">
+						<p className="text-primaryText text-base font-body w-full">Matt Lawrence </p>
+						<a href="#" target="_blank" className="text-primaryText text-base font-body  w-full">@MLProductions01</a> 
+					</div>
+				</div>
+				
+				<div className="flex justify-center items-center flex-col sm:flex-col md:flex-row text-center sm:text-left py-6 sm:py-0">
+					<div>
+						<img className="h-12 rounded-full" src={kerryHeadshot} alt=""></img>
+					</div>	
+					
+					<div className="text-center sm:ml-0 sm:text-center md:text-left md:ml-2">
+						<p className="text-primaryText text-base font-body w-full">Kerry Morrison </p>
+						<a href="#" target="_blank" className="text-primaryText text-base font-body  w-full">@kmore</a>
+					</div>
+				</div>
+		</div>
+		
   </div>
 )
 
