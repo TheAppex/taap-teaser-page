@@ -8,7 +8,7 @@ import spaceShip from "../../assets/undraw_To_the_stars_qhyy.png";
 
 const Content = () => (
 	
-  <div className="flex flex-col">
+  <div className="flex flex-col antialiased">
 		<div className="flex content-around py-8 my-8 container mx-auto px-4">
 			<div className="px-8 mx-8 my-auto w-1/2">
 				<p className="text-primaryText text-lg font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>

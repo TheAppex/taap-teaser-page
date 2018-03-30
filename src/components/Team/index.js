@@ -7,7 +7,7 @@ import mattHeadshot from "../../assets/matt-twitter.jpg";
 import kerryHeadshot from "../../assets/kerry-twitter.jpg";
 
 const Team = () => (
-  <div className="p-3 container mx-auto px-4 py-8 my-8">
+  <div className="antialiased p-3 container mx-auto px-4 py-8 my-8">
 	  <p className="text-primaryText text-basemb-8">A Project By:</p>
       <div className="font-body flex-row sm:flex-col md:flex-col lg:flex-row xl:flex-row px-2 py-4">
         

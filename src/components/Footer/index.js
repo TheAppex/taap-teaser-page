@@ -8,7 +8,7 @@ import facebookSVG from "../../assets/icon-facebook.svg";
 
 
 const Footer = () => (
-  <div className="p-3 bg-lightPrimary ">
+  <div className="p-3 bg-lightPrimary antialiased">
     <div className="flex justify-center container mx-auto px-4">
       <a href="#"><img className="h-4 fill-current text-darkPrimary rounded m-2" src={twitterSVG}></img></a>
       <a href="#"><img className="h-4 fill-current text-darkPrimary rounded m-2" src={mediumSVG}></img></a>
