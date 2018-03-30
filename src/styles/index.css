@@ -82,10 +82,14 @@
 /* david - this is the highlight to some of the subtitles */
 
 .highlight {
-  display: inline-block;
-  position: relative;
+  /* border-bottom-color: #C8E6C9;
+  border-bottom-width: 5px;  
+  border-bottom-style:outset; */
+  border-bottom: 5px inset #C8E6C9;
+
 }
 
+/* david - this is the old code that was for the psuedo element highlight but im commenting it out because im not sure we can do multilines in css
 .highlight:after {
   content: "";
   position: absolute;
@@ -96,7 +100,10 @@
   border-bottom: 8px solid #C8E6C9;
   margin-top: 5px;
   width: 100%;
-}
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+} */
 
 
 /* 
