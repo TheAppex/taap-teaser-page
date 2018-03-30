@@ -86,7 +86,6 @@
   border-bottom-width: 5px;  
   border-bottom-style:outset; */
   border-bottom: 5px inset #C8E6C9;
-
 }
 
 /* david - this is the old code that was for the psuedo element highlight but im commenting it out because im not sure we can do multilines in css
