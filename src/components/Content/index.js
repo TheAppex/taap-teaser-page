@@ -30,7 +30,7 @@ const Content = () => (
 						<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Provide the most comprehensive 
 						reviews for the best Android Apps, 
 						like the world has never seen before.</li>
-						<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Exhaustively research and present the best apps in popular categories like calendars, photography, & email</li>
+						<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Cover all the most popular app categories like to do lists, calendars, & weather apps</li>
 						<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Judge apps based on overall design, user experience and usability with highlights for indie developers</li>
 					</ul>
 				</div>
