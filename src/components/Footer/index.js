@@ -19,7 +19,7 @@ const Footer = () => (
       <p className="text-primaryText text-xs leading-normal text-center">Email us a brief bio and include previous writing samples.</p>
       <p className="text-primaryText text-xs leading-normal text-center">We are always looking for the right contributors to join our growing team.</p>
     </div>
-    <p className="text-primaryText text-xs w-full leading-normal text-center"> © 2018 | All rights reserved.</p>
+    <p className="text-primaryText text-xs w-full leading-normal text-center"> © 2018 | All rights reserved | <a href="#" className="text-primaryText text-xs w-full leading-normal text-center">Contact Us</a></p>
   </div>
 )
 
