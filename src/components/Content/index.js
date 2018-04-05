@@ -46,7 +46,7 @@ const Content = () => (
 			</div>
 		</div>
 
-		<div className="flex items-center justify-around container mx-auto px-4 py-8 my-8">
+		<div className="flex-col sm:flex sm:flex-row items-center justify-around container mx-auto px-4 py-8 my-8">
 			<img className="h-48 w-1/3" src={spaceShip}></img>
 			<div className="flex items-center flex-col">
 			<p className="text-primaryText text-lg font-body mb-2 text-center px-8 max-w-xs leading-normal">Launching soon. <br></br>
