@@ -9,7 +9,7 @@ import spaceShip from "../../assets/undraw_To_the_stars_qhyy.png";
 const Content = () => (
 	
   <div className="flex flex-col antialiased">
-		<div className="lex-col sm:flex sm:flex-row content-around py-8 my-8 container mx-auto px-4">
+		<div className="flex-col sm:flex sm:flex-row content-around py-8 my-8 container mx-auto px-4">
 			<div className="px-8 my-auto w-1/2">
 				<p className="text-primaryText text-lg font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>
 				<p className="text-primaryText text-3xl font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
@@ -19,7 +19,7 @@ const Content = () => (
 		
 		<div className="">
 			<p className="text-primaryText text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-1/3 font-bold">Our Mission</p>
-			<div className="flex justify-around items-center bg-lightPrimary pt-8 pb-8">
+			<div className="flex-col sm:flex sm:flex-row justify-around items-center bg-lightPrimary pt-8 pb-8">
 				<div className="w-1/2">
 					<img className="px-8" src={analyzeAllTheThings}></img> 
 				</div>
