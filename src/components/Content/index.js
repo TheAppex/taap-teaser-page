@@ -10,15 +10,15 @@ const Content = () => (
 	
   <div className="flex flex-col antialiased">
 		<div className="flex-col sm:flex sm:flex-row content-around py-8 my-8 container mx-auto px-4">
-			<div className="px-8 my-auto w-1/2">
+			<div className="px-8 my-auto sm:w-1/2">
 				<p className="text-primaryText text-lg font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>
 				<p className="text-primaryText text-3xl font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
 			</div>
-			<img className="h-48 align-middle w-1/2" src={phoneApps}></img> 
+			<img className="h-48 align-middle sm:w-1/2 my-2" src={phoneApps}></img> 
 		</div>
 		
 		<div className="">
-			<p className="text-primaryText text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-1/3 font-bold">Our Mission</p>
+			<p className="text-primaryText text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-2/3 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 font-bold">Our Mission</p>
 			<div className="flex-col sm:flex sm:flex-row justify-around items-center bg-lightPrimary pt-8 pb-8">
 				<div className="w-1/2">
 					<img className="px-8" src={analyzeAllTheThings}></img> 
