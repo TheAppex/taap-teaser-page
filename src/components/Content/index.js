@@ -20,10 +20,10 @@ const Content = () => (
 		<div className="">
 			<p className="text-primaryText text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-2/3 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 font-bold">Our Mission</p>
 			<div className="flex-col sm:flex sm:flex-row justify-around items-center bg-lightPrimary pt-8 pb-8">
-				<div className="w-1/2">
-					<img className="px-8" src={analyzeAllTheThings}></img> 
+				<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" >
+					<img className="px-8 py-4" src={analyzeAllTheThings}></img> 
 				</div>
-				<div className="w-1/2">
+				<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" >
 					<ul className="list-reset mission-list px-8">
 						<li className="text-primaryText text-sm font-body pb-4 leading-normal">Provide the most comprehensive 
 						reviews for the best Android Apps, 
@@ -47,7 +47,7 @@ const Content = () => (
 		</div>
 
 		<div className="flex-col sm:flex sm:flex-row items-center justify-around container mx-auto px-4 py-8 my-8">
-			<img className="h-48 w-1/3" src={spaceShip}></img>
+			<img className="h-48 md:w-1/3 lg:w-1/3 xl:w-1/3" src={spaceShip}></img>
 			<div className="flex items-center flex-col">
 			<p className="text-primaryText text-lg font-body mb-2 text-center px-8 max-w-xs leading-normal">Launching soon. <br></br>
 			Get notified when we go live and vote for the category you want reviewed first.</p>
