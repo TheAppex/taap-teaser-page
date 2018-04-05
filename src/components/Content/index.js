@@ -15,7 +15,7 @@ const Content = () => (
 				<p className="text-primaryText  text-2xl  md:text-3xl lg:text-3xl xl:text-3xl  font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
 			</div>
 			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
-				<img className="align-middle px-8 py-4" src={phoneApps}></img> 
+				<img className="align-middle px-8 py-4 max-h-48" src={phoneApps}></img> 
 			</div>
 		</div>
 		
