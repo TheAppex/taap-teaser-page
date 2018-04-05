@@ -27,11 +27,11 @@ const Content = () => (
 				</div>
 				<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" >
 					<ul className="list-reset mission-list px-8">
-						<li className="text-primaryText text-sm font-body pb-4 leading-normal">Provide the most comprehensive 
+						<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Provide the most comprehensive 
 						reviews for the best Android Apps, 
 						like the world has never seen before.</li>
-						<li className="text-primaryText text-sm font-body pb-4 leading-normal">Exhaustively research and present the best apps in popular categories like calendars, photography, & email</li>
-						<li className="text-primaryText text-sm font-body pb-4 leading-normal">Judge apps based on overall design, user experience and usability with highlights for indie developers</li>
+						<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Exhaustively research and present the best apps in popular categories like calendars, photography, & email</li>
+						<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Judge apps based on overall design, user experience and usability with highlights for indie developers</li>
 					</ul>
 				</div>
 			</div>
