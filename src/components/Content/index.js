@@ -9,21 +9,23 @@ import spaceShip from "../../assets/undraw_To_the_stars_qhyy.png";
 const Content = () => (
 	
   <div className="flex flex-col antialiased">
-		<div className="flex content-around py-8 my-8 container mx-auto px-4">
-			<div className="px-8 my-auto w-1/2">
+		<div className="flex-col sm:flex sm:flex-row sm:items-center content-around py-8 my-8 container mx-auto px-4">
+			<div className="px-8 my-auto sm:w-1/2">
 				<p className="text-primaryText text-lg font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>
-				<p className="text-primaryText text-3xl font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
+				<p className="text-primaryText  text-2xl  md:text-3xl lg:text-3xl xl:text-3xl  font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
 			</div>
-			<img className="h-48 align-middle w-1/2" src={phoneApps}></img> 
+			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+				<img className="align-middle px-8 py-4" src={phoneApps}></img> 
+			</div>
 		</div>
 		
 		<div className="">
-			<p className="text-primaryText text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-1/3 font-bold">Our Mission</p>
-			<div className="flex justify-around items-center bg-lightPrimary pt-8 pb-8">
-				<div className="w-1/2">
-					<img className="px-8" src={analyzeAllTheThings}></img> 
+			<p className="text-primaryText text-2xl  md:text-3xl lg:text-3xl xl:text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-2/3 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 font-bold">Our Mission</p>
+			<div className="flex-col sm:flex sm:flex-row justify-around items-center bg-lightPrimary pt-8 pb-8">
+				<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+					<img className="px-8 py-4" src={analyzeAllTheThings}></img> 
 				</div>
-				<div className="w-1/2">
+				<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" >
 					<ul className="list-reset mission-list px-8">
 						<li className="text-primaryText text-sm font-body pb-4 leading-normal">Provide the most comprehensive 
 						reviews for the best Android Apps, 
@@ -37,17 +39,19 @@ const Content = () => (
 		
 		<div className="flex items-center flex-wrap justify-center text-center w-full container mx-auto px-4 py-8 my-8 ">
 			<div className="w-full">
-				<p className="text-primaryText text-xl font-title text-center font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl"><span className="highlight">We do the hard work and find the best apps.</span>
+				<p className="text-primaryText text-2xl  md:text-3xl lg:text-3xl xl:text-3xl font-title text-center font-bold leading-normal"><span className="highlight">We do the hard work and find the best apps.</span>
 				</p>
 			</div>
 			<div className="w-full">
-				<p className="text-primaryText text-xl font-title text-center font-bold leading-normal md:text-3xl lg:text-3xl xl:text-3xl"><span className="highlight">So you can get to enjoying life.</span>
+				<p className="text-primaryText  text-2xl  md:text-3xl lg:text-3xl xl:text-3xl  font-title text-center font-bold leading-normal"><span className="highlight">So you can get to enjoying life.</span>
 				</p>
 			</div>
 		</div>
 
-		<div className="flex items-center justify-around container mx-auto px-4 py-8 my-8">
-			<img className="h-48 w-1/3" src={spaceShip}></img>
+		<div className="flex-col sm:flex sm:flex-row items-center justify-around container mx-auto px-4 py-8 my-8">
+			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+				<img className="align-middle px-8 py-4" src={spaceShip}></img> 
+			</div>
 			<div className="flex items-center flex-col">
 			<p className="text-primaryText text-lg font-body mb-2 text-center px-8 max-w-xs leading-normal">Launching soon. <br></br>
 			Get notified when we go live and vote for the category you want reviewed first.</p>
