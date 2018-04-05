@@ -1,8 +1,8 @@
 import React from 'react';
 
 const IndexPage = () => (
-  <div className="py-8 my-8 antialiased">
-    <p className="text-primaryText text-5xl container mx-auto font-title text-center font-bold">The Android Apps Project</p>
+  <div className="py-8 my-8 antialiased animated fadeIn">
+    <p className="text-primaryText text-5xl container mx-auto font-title text-center font-bold ">The Android Apps Project</p>
     <p className="text-primaryText text-lg	font-body text-center">Uncovering the very best Android apps.</p>
     <p className="text-primaryText text-lg font-body text-center">Period.</p>
     

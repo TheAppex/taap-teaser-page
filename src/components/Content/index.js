@@ -10,16 +10,16 @@ const Content = () => (
 	
   <div className="flex flex-col antialiased">
 		<div className="flex-col sm:flex sm:flex-row sm:items-center content-around py-8 my-8 container mx-auto px-4">
-			<div className="px-8 my-auto sm:w-1/2">
+			<div className="px-8 my-auto sm:w-1/2 animated slideInLeft">
 				<p className="text-primaryText text-lg font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>
 				<p className="text-primaryText  text-2xl  md:text-3xl lg:text-3xl xl:text-3xl  font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
 			</div>
-			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2  animated slideInRight">
 				<img className="align-middle px-8 py-4 max-h-48" src={phoneApps}></img> 
 			</div>
 		</div>
 		
-		<div className="">
+		<div className="animated fadeIn">
 			<p className="text-primaryText text-2xl  md:text-3xl lg:text-3xl xl:text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-2/3 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 font-bold">Our Mission</p>
 			<div className="flex-col sm:flex sm:flex-row justify-around items-center bg-lightPrimary pt-8 pb-8">
 				<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
@@ -49,10 +49,10 @@ const Content = () => (
 		</div>
 
 		<div className="flex-col sm:flex sm:flex-row items-center justify-around container mx-auto px-4 py-8 my-8">
-			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 animated slideInLeft">
 				<img className="align-middle px-8 py-4" src={spaceShip}></img> 
 			</div>
-			<div className="flex items-center flex-col">
+			<div className="flex items-center flex-col  animated slideInRight">
 			<p className="text-primaryText text-lg font-body mb-2 text-center px-8 max-w-xs leading-normal">Launching soon. <br></br>
 			Get notified when we go live and vote for the category you want reviewed first.</p>
 			<button className="bg-darkPrimary hover:bg-primary text-white font-bold py-2 px-4 border-b-4 border-lightPrimary hover:border-lightPrimary rounded">
