@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import Link from 'gatsby-link'
 
 // david - importing scss
 import "../styles/normalize.scss"
@@ -18,44 +19,115 @@ import Content from '../components/Content/index.js';
 import Team from '../components/Team/index.js';
 import Footer from '../components/Footer/index.js';
 
-class TemplateWrapper extends React.Component {
+
+
+
+class Template extends React.Component {
+
   componentDidMount() {
     const AOS = require('aos');
     this.aos = AOS
     this.aos.init()
   }
+
   componentDidUpdate() {
       this.aos.refresh()
   }
-  
-  render() {
-    const {location, children} = this.props
 
+  render() {
+    const { location, children } = this.props
+    let header
+
+    let rootPath = `/`
+    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
+      rootPath = __PATH_PREFIX__ + `/`
+    }
+
+    if (location.pathname === rootPath) {
+      header = (
+        <h1
+          style={{
+          }}
+        >
+          <Link
+            style={{
+            }}
+            to={'/'}
+          >
+            Gatsby Starter Blog
+          </Link>
+        </h1>
+      )
+    } else {
+      header = (
+        <h3
+          style={{
+          }}
+        >
+          <Link
+            style={{
+            }}
+            to={'/'}
+          >
+            Gatsby Starter Blog
+          </Link>
+        </h3>
+      )
+    }
     return (
       <div>
-      <Helmet
-        title="The Android Apps Project"
-        meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
-        ]}
-      />
-      <Header />
-      <div>
-        {children()}
+        <Helmet
+          title="The Android Apps Project"
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
+        />
+        <Header />
+        <div>
+          {children()}
+        </div>
+      
+        <Content />
+
+        <Team />
+
+        <Footer />
+      
       </div>
-    
-      <Content />
+    )
+  }
+}
 
-      <Team />
+export default Template
 
-      <Footer />
-    
-      </div>
-);
+// const TemplateWrapper = ({ children }) => (
+  
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-};
+//   <div>
+//     <Helmet
+//       title="The Android Apps Project"
+//       meta={[
+//         { name: 'description', content: 'Sample' },
+//         { name: 'keywords', content: 'sample, something' },
+//       ]}
+//     />
+//     <Header />
+//     <div>
+//       {children()}
+//     </div>
+	
+// 		<Content />
 
-export default TemplateWrapper;
+// 		<Team />
+
+// 		<Footer />
+	
+//   </div>
+// );
+
+// TemplateWrapper.propTypes = {
+//   children: PropTypes.func,
+// };
+
+// export default TemplateWrapper;
