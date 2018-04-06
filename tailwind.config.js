@@ -52,7 +52,7 @@ let colors = {
   'primary': '#4CAF50',
   'textIcons': '#FFFFFF',
   'accentColor': '#9E9E9E',
-  'primaryText': '#212121',
+  'primaryText': '#4A4A4A',
   'secondaryText': '#757575',
   'dividerColor': '#BDBDBD',
 
@@ -210,7 +210,7 @@ module.exports = {
 
   fonts: {
     'title': [
-      'Roboto',
+      'Roboto Condensed',
       'serif',
     ],
     'body': [
