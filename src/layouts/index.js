@@ -10,7 +10,6 @@ import "../styles/index.css"
 
 //david - importing animation library
 import "../../node_modules/aos/dist/aos.css"
-import AOS from 'aos'
 
 // david - importing the components
 import Header from '../components/Header/index.js';
