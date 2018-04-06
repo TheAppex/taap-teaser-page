@@ -7,6 +7,8 @@ import "../styles/normalize.scss"
 // import "../styles/main.scss"
 import "../styles/index.css"
 
+//david - importing animation library
+import "../../node_modules/animate.css"
 
 // david - importing the components
 import Header from '../components/Header/index.js';

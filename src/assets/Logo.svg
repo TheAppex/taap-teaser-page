@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="340px" height="184px" viewBox="0 0 340 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-229.000000, -208.000000)">
+            <g id="Logo" transform="translate(227.000000, 199.000000)">
+                <text id="PPEX" font-family="Roboto-Medium, Roboto" font-size="105" font-weight="400" fill="#388E3C">
+                    <tspan x="77.9804688" y="137">PPEX</tspan>
+                </text>
+                <text id="THE" font-family="Roboto-Medium, Roboto" font-size="43" font-weight="400" letter-spacing="10" fill="#388E3C">
+                    <tspan x="121.519531" y="40">TH</tspan>
+                    <tspan x="198.166992" y="40">E</tspan>
+                </text>
+                <text id="COLLECTION" font-family="Roboto-Medium, Roboto" font-size="43" font-weight="400" letter-spacing="10" fill="#388E3C">
+                    <tspan x="0.242675781" y="192">COLLECTIO</tspan>
+                    <tspan x="314.229004" y="192">N</tspan>
+                </text>
+                <polygon id="Triangle" fill="#388E3C" points="41.4736842 62 80.9473684 137 2 137"></polygon>
+                <polygon id="Triangle" fill="#4CAF50" points="42 99 62 137 22 137"></polygon>
+                <polygon id="Triangle" fill="#C8E6C9" points="42 118 52 137 32 137"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

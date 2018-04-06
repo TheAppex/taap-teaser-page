@@ -52,7 +52,7 @@ let colors = {
   'primary': '#4CAF50',
   'textIcons': '#FFFFFF',
   'accentColor': '#9E9E9E',
-  'primaryText': '#212121',
+  'primaryText': '#4A4A4A',
   'secondaryText': '#757575',
   'dividerColor': '#BDBDBD',
 
@@ -210,11 +210,11 @@ module.exports = {
 
   fonts: {
     'title': [
-      'Playfair-Display',
+      'Roboto',
       'serif',
     ],
     'body': [
-      'Roboto',
+      'Inter UI',
       'sans-serif',
     ],
     'sans': [
@@ -644,6 +644,8 @@ module.exports = {
   */
 
   maxHeight: {
+    '100': '100px',
+    '360': '360px',
     'full': '100%',
     'screen': '100vh',
   },
