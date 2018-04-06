@@ -10,17 +10,17 @@ const Content = () => (
 	
   <div className="flex flex-col antialiased">
 		<div className="flex-col sm:flex sm:flex-row sm:items-center content-around py-8 my-8 container mx-auto px-4">
-			<div className="px-8 my-auto sm:w-1/2" data-aos="fade-right">
+			<div className="px-8 my-auto sm:w-1/2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
 				<p className="text-primaryText text-lg font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>
 				<p className="text-primaryText  text-2xl  md:text-3xl lg:text-3xl xl:text-3xl  font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
 			</div>
-			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" data-aos="fade-left">
+			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
 				<img className="align-middle px-8 py-4 max-h-360" src={phoneApps}></img> 
 			</div>
 		</div>
 		
-		<div className="" data-aos="fade">
-			<p className="text-primaryText text-2xl  md:text-3xl lg:text-3xl xl:text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-2/3 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 font-bold">Our Mission</p>
+		<div className="" data-aos="fade" data-aos-duration="1200" data-aos-delay="300">
+			<p className="text-primaryText uppercase text-2xl  md:text-3xl lg:text-3xl xl:text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-2/3 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 font-bold">Our Mission</p>
 			<div className="flex-col sm:flex sm:flex-row justify-around items-center bg-lightPrimary shadow pt-8 pb-8">
 				<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
 					<img className="px-8 py-4 max-h-360" src={analyzeAllTheThings}></img> 
@@ -39,20 +39,20 @@ const Content = () => (
 		
 		<div className="flex items-center flex-wrap justify-center text-center w-full container mx-auto px-4 py-8 my-8 ">
 			<div className="w-full">
-				<p className="text-primaryText text-2xl  md:text-3xl lg:text-3xl xl:text-3xl font-title text-center font-bold leading-normal" data-aos="fade"><span className="highlight">We do the hard work and find the best apps.</span>
+				<p className="text-primaryText text-2xl  md:text-3xl lg:text-3xl xl:text-3xl font-title text-center font-bold leading-normal" data-aos="fade" data-aos-duration="1200" data-aos-delay="300"><span className="highlight">We do the hard work and find the best apps.</span>
 				</p>
 			</div>
 			<div className="w-full">
-				<p className="text-primaryText  text-2xl  md:text-3xl lg:text-3xl xl:text-3xl  font-title text-center font-bold leading-normal" data-aos="fade"><span className="highlight">So you can get to enjoying life.</span>
+				<p className="text-primaryText  text-2xl  md:text-3xl lg:text-3xl xl:text-3xl  font-title text-center font-bold leading-normal" data-aos="fade" data-aos-duration="1200" data-aos-delay="300"><span className="highlight">So you can get to enjoying life.</span>
 				</p>
 			</div>
 		</div>
 
 		<div className="flex-col sm:flex sm:flex-row items-center justify-around container mx-auto px-4 py-8 my-8">
-			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" data-aos="fade-right">
+			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
 				<img className="align-middle px-8 py-4 max-h-360" src={spaceShip}></img> 
 			</div>
-			<div className="flex items-center flex-col" data-aos="fade-left">
+			<div className="flex items-center flex-col" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
 				<p className="text-primaryText text-lg font-body mb-2 text-center px-0 max-w-xs leading-normal">We are hard at work behind the scenes, and will be launching soon.</p>
 
 				<form className="w-full max-w-sm">
@@ -79,7 +79,7 @@ const Content = () => (
 		</div>
 
 		<div className="flex items-center justify-center py-8 my-8 text-center w-full container mx-auto px-4">
-			<p className="text-primaryText text-lg font-body text-center leading-normal" data-aos="fade">Can't wait? Here's a <a href="#" className="text-darkPrimary hover:text-primary leading-normal">sneak peek</a> article on Medium.</p>
+			<p className="text-primaryText text-lg font-body text-center leading-normal" data-aos="fade" data-aos-duration="1200" data-aos-delay="300">Can't wait? Here's a <a href="#" className="text-darkPrimary hover:text-primary leading-normal">sneak peek</a> article on Medium.</p>
 		</div>
 
   </div>
