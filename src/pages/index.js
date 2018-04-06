@@ -4,8 +4,8 @@ import React from 'react';
 import logo from "../assets/Logo.svg";
 
 const IndexPage = () => (
-  <div className="my-8 antialiased animated fadeIn">
-    <img className="container mx-auto px-8 py-4 max-h-100" src={logo}></img>
+  <div className="my-8 flex items-center flex-wrap justify-center antialiased animated fadeIn">
+    <img className=" mx-auto px-8 py-4 max-h-100" src={logo}></img>    
     <div className="container mx-auto py-8 px-6">
       <p className="text-primaryText text-lg	font-body text-center leading-normal">We recommend the best Android apps per category.</p>
       <p className="text-primaryText text-lg font-body text-center leading-normal">Don't download all the apps, download the best.</p>
