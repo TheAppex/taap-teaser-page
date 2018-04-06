@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "David A. Lindahl",
   "dependencies": {
-    "animate.css": "^3.6.1",
+    "aos": "^2.2.0",
     "gatsby": "^1.9.232",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.7",

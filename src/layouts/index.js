@@ -8,7 +8,8 @@ import "../styles/normalize.scss"
 import "../styles/index.css"
 
 //david - importing animation library
-import "../../node_modules/animate.css"
+import "../../node_modules/aos/dist/aos.css"
+import AOS from 'aos'
 
 // david - importing the components
 import Header from '../components/Header/index.js';
@@ -17,27 +18,40 @@ import Content from '../components/Content/index.js';
 import Team from '../components/Team/index.js';
 import Footer from '../components/Footer/index.js';
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="The Android Apps Project"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header />
-    <div>
-      {children()}
-    </div>
-	
-		<Content />
+class TemplateWrapper extends React.Component {
+  componentDidMount() {
+    const AOS = require('aos');
+    this.aos = AOS
+    this.aos.init()
+  }
+  componentDidUpdate() {
+      this.aos.refresh()
+  }
+  
+  render() {
+    const {location, children} = this.props
 
-		<Team />
+    return (
+      <div>
+      <Helmet
+        title="The Android Apps Project"
+        meta={[
+          { name: 'description', content: 'Sample' },
+          { name: 'keywords', content: 'sample, something' },
+        ]}
+      />
+      <Header />
+      <div>
+        {children()}
+      </div>
+    
+      <Content />
 
-		<Footer />
-	
-  </div>
+      <Team />
+
+      <Footer />
+    
+      </div>
 );
 
 TemplateWrapper.propTypes = {

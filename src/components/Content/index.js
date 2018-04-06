@@ -10,7 +10,7 @@ const Content = () => (
 	
   <div className="flex flex-col antialiased">
 		<div className="flex-col sm:flex sm:flex-row sm:items-center content-around py-8 my-8 container mx-auto px-4">
-			<div className="px-8 my-auto sm:w-1/2 animated slideInLeft">
+			<div className="px-8 my-auto sm:w-1/2" data-aos="fade-up">
 				<p className="text-primaryText text-lg font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>
 				<p className="text-primaryText  text-2xl  md:text-3xl lg:text-3xl xl:text-3xl  font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
 			</div>
