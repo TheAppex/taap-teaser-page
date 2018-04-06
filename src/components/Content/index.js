@@ -53,11 +53,22 @@ const Content = () => (
 				<img className="align-middle px-8 py-4 max-h-360" src={spaceShip}></img> 
 			</div>
 			<div className="flex items-center flex-col  animated slideInRight">
-			<p className="text-primaryText text-lg font-body mb-2 text-center px-8 max-w-xs leading-normal">Launching soon. <br></br>
-			Get notified when we go live and vote for the category you want reviewed first.</p>
-			<button className="bg-darkPrimary hover:bg-primary text-white font-bold py-2 px-4 border-b-4 border-lightPrimary hover:border-lightPrimary rounded">
-				<svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
-				<span className="font-title uppercase tracking-wide font-bold">Stay Updated</span>
+				<p className="text-primaryText text-lg font-body mb-2 text-center px-8 max-w-xs leading-normal">Launching soon.</p>
+
+				<form className="w-full max-w-sm">
+					<div className="flex items-center py-2">
+						<input className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter rounded" type="text" placeholder="Get notified when we go live!" aria-label="Full name"></input>
+						
+						<button className="flex-no-shrink bg-darkPrimary hover:bg-primary text-white font-bold py-2 px-4 rounded" type="button">
+							<span className="font-body uppercase tracking-wide font-bold">Sign Up</span>
+							<svg className="fill-current w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
+						</button>
+						
+					</div>
+				</form>
+				<button className="bg-darkPrimary hover:bg-primary text-white font-bold py-2 px-4 border-b-4 border-lightPrimary hover:border-lightPrimary rounded">
+					<svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 0h1v3l3 7v8a2 2 0 0 1-2 2H5c-1.1 0-2.31-.84-2.7-1.88L0 12v-2a2 2 0 0 1 2-2h7V2a2 2 0 0 1 2-2zm6 10h3v10h-3V10z"/></svg>
+					<span className="font-body uppercase tracking-wide font-bold">Vote for the category you want reviewed first</span>
 			</button>
 			</div>
 		</div>
