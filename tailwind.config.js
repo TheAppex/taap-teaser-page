@@ -210,7 +210,7 @@ module.exports = {
 
   fonts: {
     'title': [
-      'Playfair-Display',
+      'Roboto',
       'serif',
     ],
     'body': [
@@ -644,6 +644,7 @@ module.exports = {
   */
 
   maxHeight: {
+    '100': '100px',
     '360': '360px',
     'full': '100%',
     'screen': '100vh',

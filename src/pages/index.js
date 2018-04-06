@@ -4,11 +4,12 @@ import React from 'react';
 import logo from "../assets/Logo.svg";
 
 const IndexPage = () => (
-  <div className="py-8 my-8 antialiased animated fadeIn">
-    <img className="align-middle px-8 py-4 max-h-360" src={logo}></img>
-    <p className="text-primaryText text-lg	font-body text-center">We recommend the best Android apps per category.</p>
-    <p className="text-primaryText text-lg font-body text-center">Don't download all the apps, download the best.</p>
-    
+  <div className="my-8 antialiased animated fadeIn">
+    <img className="container mx-auto px-8 py-4 max-h-100" src={logo}></img>
+    <div className="container mx-auto py-8 px-6">
+      <p className="text-primaryText text-lg	font-body text-center leading-normal">We recommend the best Android apps per category.</p>
+      <p className="text-primaryText text-lg font-body text-center leading-normal">Don't download all the apps, download the best.</p>
+    </div>
   </div>
 );
 
