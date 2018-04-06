@@ -1,10 +1,13 @@
 import React from 'react';
 
+// david - importing our company logo
+import logo from "../assets/Logo.svg";
+
 const IndexPage = () => (
   <div className="py-8 my-8 antialiased animated fadeIn">
-    <p className="text-primaryText text-5xl container mx-auto font-title text-center font-bold ">The Android Apps Project</p>
-    <p className="text-primaryText text-lg	font-body text-center">Uncovering the very best Android apps.</p>
-    <p className="text-primaryText text-lg font-body text-center">Period.</p>
+    <img className="align-middle px-8 py-4 max-h-360" src={logo}></img>
+    <p className="text-primaryText text-lg	font-body text-center">We recommend the best Android apps per category.</p>
+    <p className="text-primaryText text-lg font-body text-center">Don't download all the apps, download the best.</p>
     
   </div>
 );

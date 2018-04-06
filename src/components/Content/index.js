@@ -21,7 +21,7 @@ const Content = () => (
 		
 		<div className="animated fadeIn">
 			<p className="text-primaryText text-2xl  md:text-3xl lg:text-3xl xl:text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-2/3 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 font-bold">Our Mission</p>
-			<div className="flex-col sm:flex sm:flex-row justify-around items-center bg-lightPrimary pt-8 pb-8">
+			<div className="flex-col sm:flex sm:flex-row justify-around items-center bg-lightPrimary shadow pt-8 pb-8">
 				<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
 					<img className="px-8 py-4 max-h-360" src={analyzeAllTheThings}></img> 
 				</div>
