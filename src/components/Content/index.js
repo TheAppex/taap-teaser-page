@@ -12,7 +12,7 @@ const Content = () => (
 	
 	<div className="flex flex-col antialiased">
 	
-		<div className="flex-col sm:flex sm:flex-row items-center justify-around container mx-auto px-4 py-8 my-8">
+		<div className="flex-col sm:flex sm:flex-row items-center justify-around container mx-auto px-4 py-8">
 		<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
 			<img className="align-middle px-8 py-4 max-h-360" src={spaceShip}></img> 
 		</div>
