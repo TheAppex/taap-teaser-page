@@ -57,22 +57,22 @@ const Content = () => (
 		
 		<div className="">
 			<p className="text-primaryText uppercase tracking-wide text-2xl  md:text-3xl lg:text-3xl xl:text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-2/3 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 font-bold">Our Mission</p>
-			<div className="flex-col sm:flex sm:flex-row content-around items-center bg-lightPrimary shadow pt-8 pb-8">
-				<div data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
-					<div className="sm:w-1/2">
-						<img className="px-8 py-4 max-h-360" src={analyzeAllTheThings}></img> 
-					</div>
-					<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
-						<ul className="list-reset mission-list px-8">
-							<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Provide the most comprehensive 
-							reviews for the best Android Apps, 
-							like the world has never seen before</li>
-							<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Cover all the most popular app categories like to do lists, calendars, & weather apps</li>
-							<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Judge apps based on overall design, user experience and usability with highlights for indie developers</li>
-						</ul>
-					</div>
-				</div>
+			
+		<div className="flex-col sm:flex sm:flex-row content-around items-center bg-lightPrimary shadow pt-8 pb-8" data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
+			<div className="sm:w-1/2">
+				<img className="px-8 py-4 max-h-360" src={analyzeAllTheThings}></img> 
 			</div>
+			<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+				<ul className="list-reset mission-list px-8">
+					<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Provide the most comprehensive 
+					reviews for the best Android Apps, 
+					like the world has never seen before</li>
+					<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Cover all the most popular app categories like to do lists, calendars, & weather apps</li>
+					<li className="text-primaryText text-sm md:text-base lg:text-base xl:text-base font-body pb-4 leading-normal">Judge apps based on overall design, user experience and usability with highlights for indie developers</li>
+				</ul>
+			</div>
+		</div>
+			
 		</div>
 		
 		<div className="flex items-center flex-wrap justify-center text-center w-full container mx-auto px-4 py-8 my-8 ">
