@@ -8,7 +8,7 @@ import kerryHeadshot from "../../assets/kerry-twitter.jpg";
 
 const Team = () => (
   <div className="antialiased p-3 container mx-auto px-4 py-8 mt-8 " data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
-	  <p className="text-primaryText text-basemb-8 border-t-2 border-dividerColor pt-8">A Project By:</p>
+	  <p className="text-primaryText text-base xl:text-lg mb-8 border-t-2 border-dividerColor pt-8">A Project By:</p>
 		
 		<div className="flex-col sm:flex sm:flex-row font-body justify-around content-center md:px-2 py-4">
 				
@@ -18,8 +18,8 @@ const Team = () => (
 					</div>	
 					
 					<div className="sm:ml-0 sm:text-center md:text-left md:ml-2">
-						<p className="text-primaryText text-base font-body w-full">David Lindahl </p>
-						<a href="https://twitter.com/austriker27" target="_blank" className="text-darkPrimary hover:text-primary text-base font-body w-full">@austriker27</a>
+						<p className="text-primaryText text-base xl:text-lg font-body w-full">David Lindahl </p>
+						<a href="https://twitter.com/austriker27" target="_blank" className="text-darkPrimary hover:text-primary text-base xl:text-lg font-body w-full">@austriker27</a>
 					</div>
 					
 				</div>
@@ -30,8 +30,8 @@ const Team = () => (
 					</div>
 					
 					<div className="sm:ml-0 sm:text-center md:text-left md:ml-2">
-						<p className="text-primaryText text-base font-body w-full">Matt Lawrence </p>
-						<a href="https://twitter.com/MLProductions01" target="_blank" className="text-darkPrimary hover:text-primary text-base font-body  w-full">@MLProductions01</a> 
+						<p className="text-primaryText text-base xl:text-lg font-body w-full">Matt Lawrence </p>
+						<a href="https://twitter.com/MLProductions01" target="_blank" className="text-darkPrimary hover:text-primary text-base xl:text-lg font-body  w-full">@MLProductions01</a> 
 					</div>
 				</div>
 				
@@ -41,8 +41,8 @@ const Team = () => (
 					</div>	
 					
 					<div className="text-center sm:ml-0 sm:text-center md:text-left md:ml-2">
-						<p className="text-primaryText text-base font-body w-full">Kerry Morrison </p>
-						<a href="https://twitter.com/kmore" target="_blank" className="text-darkPrimary hover:text-primary text-base font-body  w-full">@kmore</a>
+						<p className="text-primaryText text-base xl:text-lg font-body w-full">Kerry Morrison </p>
+						<a href="https://twitter.com/kmore" target="_blank" className="text-darkPrimary hover:text-primary text-base xl:text-lg font-body  w-full">@kmore</a>
 					</div>
 				</div>
 		</div>

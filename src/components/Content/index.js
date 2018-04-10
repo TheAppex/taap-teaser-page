@@ -17,11 +17,11 @@ const Content = () => (
 			<img className="align-middle px-8 py-4 max-h-360" src={spaceShip}></img> 
 		</div>
 		<div className="flex items-center flex-col" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
-			<p className="text-primaryText text-lg font-body mb-2 text-center px-0 max-w-xs leading-normal">We're prepping to launch soon! Get notified when we go live.</p>
+			<p className="text-primaryText text-lg xl:text-xl font-body mb-2 text-center px-0 max-w-xs leading-normal">We're prepping to launch soon! Get notified when we go live.</p>
 
 			<form className="w-full max-w-sm">
 				<div className="flex items-center py-2">
-					<input className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter rounded" type="text" placeholder="Stay updated via email" aria-label="Full name"></input>
+					<input className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter text-base xl:text-lg rounded" type="text" placeholder="Stay updated via email" aria-label="Full name"></input>
 					
 					<button className="flex-no-shrink bg-darkPrimary hover:bg-primary text-lightPrimary font-bold py-2 px-4 rounded" type="button">
 						<span className="font-body uppercase tracking-wide font-bold"></span>
@@ -34,8 +34,8 @@ const Content = () => (
 
 			
 				<button className="p-2 bg-darkPrimary hover:bg-primary items-center text-textIcons leading-none rounded-full flex lg:inline-flex mt-2" role="alert">
-					<span className="flex rounded-full bg-lightPrimary uppercase px-2 py-1 text-xs font-bold text-darkPrimary mr-3">Vote</span>
-					<span className="font-body font-semibold mr-2 text-left flex-auto">Tell us which category you want reviewed</span>
+					<span className="flex rounded-full bg-lightPrimary uppercase px-2 py-1 text-xs xl:text-base font-bold text-darkPrimary mr-3">Vote</span>
+					<span className="font-body font-semibold mr-2 text-base xl:text-lg text-left flex-auto">Tell us which category you want reviewed</span>
 					<svg className="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
 				</button>
 			
@@ -43,11 +43,11 @@ const Content = () => (
 	</div>
 
 	<div className="flex items-center justify-center py-8 my-8 text-center w-full container mx-auto px-4">
-		<p className="text-primaryText text-lg font-body text-center leading-normal" data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">Can't wait? Here's a <a href="#" className="text-darkPrimary hover:text-primary leading-normal">sneak peek</a> article on Medium.</p>
+		<p className="text-primaryText text-lg xl:text-xl font-body text-center leading-normal" data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">Can't wait? Here's a <a href="#" className="text-darkPrimary hover:text-primary leading-normal">sneak peek</a> article on Medium.</p>
 	</div>
 	<div className="flex-col sm:flex sm:flex-row sm:items-center content-around py-8 my-8 container mx-auto px-4">
 		<div className="px-8 my-auto sm:w-1/2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
-			<p className="text-primaryText text-lg font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>
+			<p className="text-primaryText text-lg xl:text-xl font-body align-middle max-w-xs leading-normal">Overwhelmed by how many different apps there are for ____ ??</p>
 			<p className="text-primaryText  text-2xl  md:text-3xl lg:text-3xl xl:text-3xl  font-title align-middle font-bold leading-normal"><span className="highlight">We are too.</span></p>
 		</div>
 		<div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
