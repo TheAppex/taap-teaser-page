@@ -19,7 +19,8 @@ const Content = () => (
 		<div className="flex items-center flex-col" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
 			<p className="text-primaryText text-lg xl:text-xl font-body mb-2 text-center px-0 max-w-xs leading-normal">We're prepping to launch soon! Get notified when we go live.</p>
 
-			<form className="w-full max-w-sm">
+			<form name="newsletter" action="/success" method="post" data-netlify="true" data-netlify-honeypot="bot-field" className="w-full max-w-sm">
+    		<input type="hidden" name="bot-field" />
 				<div className="flex items-center py-2">
 					<input className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter text-base xl:text-lg rounded" type="text" placeholder="Stay updated via email" aria-label="Full name"></input>
 					
