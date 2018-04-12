@@ -22,11 +22,11 @@ const Content = () => (
 			<form name="newsletter" action="/success" method="post" data-netlify="true" data-netlify-honeypot="bot-field" className="w-full max-w-sm">
     		<input type="hidden" name="bot-field" />
 				<div className="flex items-center py-2">
-					<input className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter text-base xl:text-lg rounded" type="text" placeholder="Stay updated via email" aria-label="Full name"></input>
+					<input className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter text-base xl:text-lg rounded" type="text" placeholder="Enter your email" aria-label="Full name"></input>
 					
 					<button className="flex-no-shrink bg-darkPrimary hover:bg-primary text-lightPrimary font-bold py-2 px-4 rounded" type="button">
-						<span className="font-body uppercase tracking-wide font-bold"></span>
-						<svg className="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
+						<span className="text-xs xl:text-base font-bold text-lightPrimary uppercase tracking-wide">Stay Updated</span>
+						
 					</button>
 					
 				</div>
@@ -34,8 +34,8 @@ const Content = () => (
 			
 
 			
-				<button className="p-2 bg-darkPrimary hover:bg-primary items-center text-textIcons leading-none rounded-full flex lg:inline-flex mt-2" role="alert">
-					<span className="flex rounded-full bg-lightPrimary uppercase tracking-wide px-2 py-1 text-xs xl:text-base font-bold text-darkPrimary mr-3">Vote</span>
+				<button className="p-2 bg-lightPrimary hover:bg-primary items-center text-darkPrimary leading-none rounded-full flex lg:inline-flex mt-2" role="alert">
+					<span className="flex rounded-full bg-textIcons px-2 py-1 text-xs xl:text-base font-bold text-darkPrimary uppercase tracking-wide mr-3">Vote</span>
 					<span className="font-body font-semibold mr-2 text-base xl:text-lg text-left flex-auto">Tell us which category you want reviewed</span>
 					<svg className="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
 				</button>
@@ -59,7 +59,7 @@ const Content = () => (
 	<div className="">
 		<p className="text-primaryText uppercase tracking-wide text-2xl  md:text-3xl lg:text-3xl xl:text-3xl font-title text-center container mx-auto px-4 py-2 pt-4 bg-lightPrimary rounded-t-lg w-2/3 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/4 font-bold" data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">Our Mission</p>
 			
-		<div className="flex-col sm:flex sm:flex-row content-around items-center bg-gradient shadow pt-8 pb-8">
+		<div className="flex-col sm:flex sm:flex-row content-around items-center bg-lightPrimary shadow pt-8 pb-8">
 			<div className="text-center w-full md:w-1/2 lg:w-1/2 xl:w-1/2 " data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
 				<img className="px-8 py-4 max-h-360" src={analyzeAllTheThings}></img> 
 			</div>
