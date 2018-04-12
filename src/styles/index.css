@@ -152,3 +152,12 @@ body {
 .font-body {
   font-weight: 300;
 }
+
+
+/* david - background gradient for content section below our mission - since removed */
+/* 
+.bg-gradient {
+  background: rgb(76,175,80);
+  background: radial-gradient(circle, rgba(76,175,80,1) 0%, rgba(200,230,201,1) 24%, rgba(200,230,201,1) 100%); 
+
+} */
