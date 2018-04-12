@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 // david - importing images
 import davidHeadshot from "../../assets/david-twitter.jpg";
-import mattHeadshot from "../../assets/matt-twitter.jpg";
+import mattHeadshot from "../../assets/matt.jpg";
 import kerryHeadshot from "../../assets/kerry-twitter.jpg";
 
 const Team = () => (
