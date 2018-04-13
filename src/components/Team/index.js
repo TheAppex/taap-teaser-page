@@ -18,7 +18,7 @@ const Team = () => (
 					</div>	
 					
 					<div className="sm:ml-0 sm:text-center md:text-left md:ml-2">
-						<p className="text-primaryText text-base xl:text-lg font-body w-full mb-1 font-bold">David A. Lindahl </p>
+						<p className="text-primaryText text-base xl:text-lg font-body w-full mb-1">David A. Lindahl </p>
 						<a href="https://twitter.com/austriker27" target="_blank" className="text-darkPrimary hover:text-primary text-sm xl:text-base font-body w-full">@austriker27</a>
 					</div>
 					
@@ -30,7 +30,7 @@ const Team = () => (
 					</div>
 					
 					<div className="sm:ml-0 sm:text-center md:text-left md:ml-2">
-						<p className="text-primaryText text-base xl:text-lg font-body w-full mb-1 font-bold">Matt Lawrence </p>
+						<p className="text-primaryText text-base xl:text-lg font-body w-full mb-1">Matt Lawrence </p>
 						<a href="https://twitter.com/MLProductions01" target="_blank" className="text-darkPrimary hover:text-primary text-sm xl:text-base font-body  w-full">@MLProductions01</a> 
 					</div>
 				</div>
@@ -41,7 +41,7 @@ const Team = () => (
 					</div>	
 					
 					<div className="text-center sm:ml-0 sm:text-center md:text-left md:ml-2">
-						<p className="text-primaryText text-base xl:text-lg font-body w-full mb-1 font-bold">Kerry Morrison </p>
+						<p className="text-primaryText text-base xl:text-lg font-body w-full mb-1">Kerry Morrison </p>
 						<a href="https://twitter.com/kmore" target="_blank" className="text-darkPrimary hover:text-primary  text-sm xl:text-base font-body  w-full">@kmore</a>
 					</div>
 				</div>
