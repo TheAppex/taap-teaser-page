@@ -26,7 +26,6 @@ const Content = () => (
 					
 					<button className="flex-no-shrink bg-darkPrimary hover:bg-primary text-lightPrimary font-bold py-2 px-4 rounded" type="button">
 						<span className="text-xs xl:text-base font-bold text-lightPrimary uppercase tracking-wide">Stay Updated</span>
-						
 					</button>
 					
 				</div>
