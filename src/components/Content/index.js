@@ -24,10 +24,10 @@ const Content = () => (
 				<div className="flex items-center py-2">
 					
 
-					<input type="text" className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-darkPrimary rounded rounded-r-none px-3 relative " placeholder="Enter your email"></input>
+					<input type="text" className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-darkPrimary rounded rounded-r-none px-3 relative text-base xl:text-xl" placeholder="Enter your email"></input>
 					<div className="flex -mr-px">
 						
-						<button className="flex items-center leading-normal bg-darkPrimary hover:bg-primary text-lightPrimary rounded rounded-l-none border border-l-0 border-darkPrimary px-3 whitespace-no-wrap h-10 text-sm xl:text-lg font-bold uppercase tracking-wide">Stay Updated</button>
+						<button className="flex items-center leading-normal bg-darkPrimary hover:bg-primary text-lightPrimary rounded rounded-l-none border border-l-0 border-darkPrimary px-3 whitespace-no-wrap h-10 text-base xl:text-xl font-bold uppercase tracking-wide">Stay Updated</button>
 						
 					</div>	
 					
