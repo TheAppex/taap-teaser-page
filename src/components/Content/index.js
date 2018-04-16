@@ -17,15 +17,15 @@ const Content = () => (
 			<img className="align-middle px-8 py-4 max-h-360" src={spaceShip}></img> 
 		</div>
 		<div className="flex items-center flex-col" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
-			<p className="text-primaryText text-lg xl:text-xl font-body mb-2 text-center px-0 max-w-xs leading-normal">We're prepping to launch soon! Get notified when we go live.</p>
+			<p className="text-primaryText text-lg xl:text-xl font-body mb-2 text-center px-0 max-w-xs leading-normal">We're prepping to launch soon! Get notified when we go live:</p>
 
 			<form name="newsletter" action="/success" method="post" data-netlify="true" data-netlify-honeypot="bot-field" className="w-full max-w-sm">
     		<input type="hidden" name="bot-field" />
 				<div className="flex items-center py-2">
 					<input className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter text-base xl:text-lg rounded  shadow-2" type="text" placeholder="Enter your email" aria-label="Full name"></input>
 					
-					<button className="flex-no-shrink bg-darkPrimary hover:bg-primary text-lightPrimary font-bold py-2 px-4 rounded btn-hover shadow-2" type="button">
-						<span className="text-base xl:text-xl font-bold text-lightPrimary uppercase tracking-wide">Stay Updated</span>
+					<button className="flex-no-shrink text-lightPrimary font-bold py-2 px-4 rounded btn-hover shadow-2 btn-gradient" type="button">
+						<span className="text-base xl:text-xl font-bold text-textIcons uppercase tracking-wide">Stay Updated</span>
 					</button>
 					
 				</div>
