@@ -161,3 +161,10 @@ body {
   background: radial-gradient(circle, rgba(76,175,80,1) 0%, rgba(200,230,201,1) 24%, rgba(200,230,201,1) 100%); 
 
 } */
+
+
+/* david - move button up a bit when hovering for 3D effect */
+
+.btn-hover:hover {
+  transform: translateY(-2px);
+}
