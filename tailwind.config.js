@@ -210,7 +210,7 @@ module.exports = {
 
   fonts: {
     'title': [
-      'Roboto',
+      'Nunito',
       'serif',
     ],
     'body': [
