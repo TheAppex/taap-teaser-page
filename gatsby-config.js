@@ -9,8 +9,11 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     'gatsby-plugin-react-helmet',
-    resolve: 'gatsby-plugin-my-cool-plugin',
-    options: {
-      endpoint: 'https://theappex.us18.list-manage.com/subscribe/post?u=06dcce05a26a15a3a08b2066e&amp;id=b71672f575',
+    {
+      resolve: `gatsby-plugin-my-cool-plugin`,
+      options: {
+        endpoint: `https://theappex.us18.list-manage.com/subscribe/post?u=06dcce05a26a15a3a08b2066e&amp;id=b71672f575`,
+      },
+    },
   ],
 };
