@@ -9,27 +9,20 @@ import spaceShip from "../../assets/undraw_To_the_stars_qhyy.svg";
 //david - importing mailchimp plugin
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
-export default class Content extends React.Component {
+class Content extends React.Component {
 	constructor() {
 		super()
+		this.setState({ email: event.target.value })
 	}
-	
+
 	render(){	
-		_handleSubmit = event => {
+		let _handleSubmit = async (event) => {
 			event.preventDefault;
-			addToMailchimp(email, listFields)
-			.then(data => {
-				// I recommend setting data to React state
-				// but you can do whatever you want
-				console.log(data)
-			})
-			.catch(() => {
-				// unnecessary because Mailchimp only ever
-				// returns a 200 status code
-				// see below for how to handle errors
-			})
+			const result = await addToMailchimp(email, listFields)
+			// david - docs say store result in state - TODO ?
 		}
-	 
+		let email;
+		let listFields;
 
 		return(
 
@@ -42,7 +35,14 @@ export default class Content extends React.Component {
 			<div className="flex items-center flex-col" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
 				<p className="text-primaryText text-lg xl:text-xl font-body mb-2 text-center px-0 max-w-xs leading-normal">We're prepping to launch soon! Get notified when we go live:</p>
 
-				<form name="newsletter" action="/success" method="post" data-netlify="true" data-netlify-honeypot="bot-field" className="w-full max-w-sm" onSubmit={this._handleSubmit(email, {listFields})}>
+				<form 
+					name="newsletter" 
+					action="/success" 
+					method="post" 
+					data-netlify="true" data-netlify-honeypot="bot-field" 
+					className="w-full max-w-sm" 
+					onSubmit={this._handleSubmit(email, {listFields})}
+				>
 					<input type="hidden" name="bot-field" />
 					<div className="flex items-center py-2">
 						<input className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter text-base xl:text-lg rounded  shadow-2" type="text" placeholder="Enter your email" aria-label="Full name"></input>
@@ -111,5 +111,6 @@ export default class Content extends React.Component {
 		</div>
 	
 	)};
-		
+}		
+
 export default Content
