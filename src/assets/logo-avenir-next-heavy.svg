@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="389px" height="126px" viewBox="0 0 389 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" transform="translate(0.000000, -12.000000)">
+            <text id="PPEX" font-family="AvenirNext-Heavy, Avenir Next" font-size="105" font-weight="600" letter-spacing="3" fill="#388E3C">
+                <tspan x="88.0225" y="138">PPE</tspan>
+                <tspan x="303.9775" y="138">X</tspan>
+            </text>
+            <text id="THE" font-family="AvenirNext-Bold, Avenir Next" font-size="43" font-weight="bold" letter-spacing="10" fill="#388E3C">
+                <tspan x="147.032" y="43">TH</tspan>
+                <tspan x="224.867" y="43">E</tspan>
+            </text>
+            <polygon id="Triangle" fill="#388E3C" points="44.5 64 89 138 0 138"></polygon>
+            <polygon id="Triangle" fill="#4CAF50" points="44 101 66 138 22 138"></polygon>
+            <polygon id="Triangle" fill="#C8E6C9" points="45 119 56 138 34 138"></polygon>
+        </g>
+    </g>
+</svg>
