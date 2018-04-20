@@ -9,11 +9,16 @@ import spaceShip from "../../assets/undraw_To_the_stars_qhyy.svg";
 //david - importing mailchimp plugin
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
+// david - getting errors because email is not defined so setting up an empty variable for it
+
+let email;
+
+
 class Content extends React.Component {
 	constructor() {
 		super()
 		this.state = {
-      let email: ``,
+      email: ``,
     }
 	}
 
@@ -23,8 +28,8 @@ class Content extends React.Component {
 	}
 
 	// david - post to MC server and handle MC response
-	_postEmailToMailchimp = (event, attributes) => {
-		addToMailchimp(email, attributes)
+	_postEmailToMailchimp = (event, email) => {
+		addToMailchimp(email)
 		.then(result => {
 			// david - mailchimp always returns a 200 response
 			if (result.result !== `success`) {
@@ -39,7 +44,7 @@ class Content extends React.Component {
 				})
 			}
 		})
-		.catch( error => {
+		.catch(error => {
 			this.setState({
 				status: `error`,
 				msg: error,
@@ -47,7 +52,7 @@ class Content extends React.Component {
 		})
 	}
 
-	_handleFormSubmit = event => {
+	_handleFormSubmit = (event) => {
 		event.preventDefault();
 		event.stopPropogation();
 
@@ -55,9 +60,7 @@ class Content extends React.Component {
 			status: `sending`,
 			msg: null,
 		},
-		this._postEmailToMailchimp(this.state.email, {
-			pathname: document.location.pathname,
-		})
+		this._postEmailToMailchimp(this.state.email)
 		)
 	}
 
@@ -92,7 +95,7 @@ class Content extends React.Component {
 									method="post" 
 									data-netlify="true" data-netlify-honeypot="bot-field" 
 									className="w-full max-w-sm" 
-									onSubmit={this._handleSubmit(email, {listFields})}
+									onSubmit={this._handleFormSubmit(email)}
 								>
 								<input 
 									type="hidden" 
@@ -122,8 +125,6 @@ class Content extends React.Component {
 							</form>
 						</div>
 					)}
-					
-
 					
 						<button className="p-2 bg-lightPrimary hover:bg-primary items-center text-darkPrimary hover:text-textIcons leading-none rounded-full flex lg:inline-flex mt-2 shadow-2" role="alert">
 							<span className="flex rounded-full bg-textIcons px-2 py-1 text-xs xl:text-base font-bold text-darkPrimary uppercase tracking-wide mr-3">Vote</span>
