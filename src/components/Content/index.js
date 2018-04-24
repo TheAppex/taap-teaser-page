@@ -20,6 +20,9 @@ class Content extends React.Component {
 		this.state = {
       email: ``,
     }
+	this._postEmailToMailchimp = this._postEmailToMailchimp.bind(this);
+	this._handleEmailChange = this._handleEmailChange.bind(this);
+	this._handleFormSubmit = this._handleFormSubmit.bind(this);
 	}
 
 	// david - update state when email changes
@@ -28,7 +31,7 @@ class Content extends React.Component {
 	}
 
 	// david - post to MC server and handle MC response
-	_postEmailToMailchimp = (event, email) => {
+	_postEmailToMailchimp = (email) => {
 		addToMailchimp(email)
 		.then(result => {
 			// david - mailchimp always returns a 200 response
@@ -52,9 +55,8 @@ class Content extends React.Component {
 		})
 	}
 
-	_handleFormSubmit = (event) => {
-		//event.preventDefault();
-		event.stopPropogation();
+	_handleFormSubmit = e => {
+		
 
 		this.setState({
 			status: `sending`,
@@ -62,6 +64,7 @@ class Content extends React.Component {
 		},
 		this._postEmailToMailchimp(this.state.email)
 		)
+		e.preventDefault;
 	}
 
 	render(){	
@@ -91,11 +94,11 @@ class Content extends React.Component {
 						<div>
 							<form 
 									name="newsletter" 
-									action="/success" 
+									
 									method="post" 
 									data-netlify="true" data-netlify-honeypot="bot-field" 
 									className="w-full max-w-sm" 
-									onSubmit={this._handleFormSubmit(email)}
+									onSubmit={this._handleFormSubmit}
 								>
 								<input 
 									type="hidden" 
@@ -112,8 +115,8 @@ class Content extends React.Component {
 									
 									<button 
 										className="flex-no-shrink text-lightPrimary font-bold py-2 px-4 rounded btn-hover shadow-2 btn-gradient" 
-										type="button"
-										onClick={this._handleFormSubmit}
+										type="submit"
+										
 									>
 										<span 
 											className="text-base xl:text-xl font-bold text-textIcons uppercase tracking-wide">
