@@ -53,7 +53,7 @@ class Content extends React.Component {
 	}
 
 	_handleFormSubmit = (event) => {
-		event.preventDefault();
+		//event.preventDefault();
 		event.stopPropogation();
 
 		this.setState({
