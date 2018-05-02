@@ -10,65 +10,38 @@ import spaceShip from "../../assets/undraw_To_the_stars_qhyy.svg";
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 // david - getting errors because email is not defined so setting up an empty variable for it
-
 let email;
-
 
 class Content extends React.Component {
 	constructor() {
     super()
     this.state = {
       email: ``,
-    }
+		}
+	this._handleEmailChange = this._handleEmailChange.bind(this);
+	this._handleSubmit = this._handleSubmit.bind(this);
   }
 
   // Update state each time user edits their email address
-  _handleEmailChange = e => {
-    this.setState({ email: e.target.value })
+  _handleEmailChange = event => {
+    this.setState({ email: event.target.value })
   }
 
-  // Post to MC server & handle its response
-  _postEmailToMailchimp = (email, attributes) => {
-    addToMailchimp(email, attributes)
-    .then(result => {
-      // Mailchimp always returns a 200 response
-      // So we check the result for MC errors & failures
-      if (result.result !== `success`) {
-        this.setState({
-          status: `error`,
-          msg: result.msg,
-        })
-      } else {
-        // Email address succesfully subcribed to Mailchimp
-        this.setState({
-          status: `success`,
-          msg: result.msg,
-        })
-      }
+	_handleSubmit = event => {
+    event.preventDefault;
+    addToMailchimp(email)
+    .then(data => {
+      // I recommend setting data to React state
+      // but you can do whatever you want
+      console.log(data)
     })
-    .catch(err => {
-      // Network failures, timeouts, etc
-      this.setState({
-        status: `error`,
-        msg: err,
-      })
+    .catch(() => {
+      // unnecessary because Mailchimp only ever
+      // returns a 200 status code
+      // see below for how to handle errors
     })
   }
 
-  _handleFormSubmit = e => {
-    e.preventDefault()
-    e.stopPropagation()
-
-    this.setState({
-        status: `sending`,
-        msg: null,
-      },
-      // setState callback (subscribe email to MC)
-      this._postEmailToMailchimp(this.state.email, {
-        pathname: document.location.pathname,
-      })
-    )
-  }
 
 	render(){	
 		return(
@@ -82,18 +55,7 @@ class Content extends React.Component {
 				<div className="flex items-center flex-col" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
 					<p className="text-primaryText text-lg xl:text-xl font-body mb-2 text-center px-0 max-w-xs leading-normal">We're prepping to launch soon! Get notified when we go live:</p>
 
-					{this.state.status === `success` ? (
-						<div>
-							<div className="flex items-center py-2">
-								<div className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter text-base xl:text-lg rounded  shadow-2" type="text">Thank for your signing up</div>
-								
-								<button className="flex-no-shrink text-lightPrimary font-bold py-2 px-4 rounded btn-hover shadow-2 btn-gradient" type="button">
-									<span className="text-base xl:text-xl font-bold text-textIcons uppercase tracking-wide">put check box here</span>
-								</button>
-								
-							</div>
-						</div>
-					) : (
+					
 						<div>
 							<form 
 									name="newsletter" 
@@ -101,7 +63,7 @@ class Content extends React.Component {
 									method="post" 
 									data-netlify="true" data-netlify-honeypot="bot-field" 
 									className="w-full max-w-sm" 
-									
+									onSubmit={this._handleSubmit(email)}
 								>
 								<input 
 									type="hidden" 
@@ -109,7 +71,7 @@ class Content extends React.Component {
 								/>
 								<div className="flex items-center py-2">
 									<input 
-										className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter text-base xl:text-lg rounded  shadow-2" 
+										className="appearance-none bg-transparent border-none w-full text-primaryText mr-3 py-2 px-2 bg-grey-lighter text-base xl:text-lg rounded  shadow-2 min-w-50" 
 										type="text" 
 										placeholder="Enter your email" 
 										aria-label="Full name"
@@ -130,7 +92,7 @@ class Content extends React.Component {
 								</div>
 							</form>
 						</div>
-					)}
+					
 					
 						<button className="p-2 bg-lightPrimary hover:bg-primary items-center text-darkPrimary hover:text-textIcons leading-none rounded-full flex lg:inline-flex mt-2 shadow-2" role="alert">
 							<span className="flex rounded-full bg-textIcons px-2 py-1 text-xs xl:text-base font-bold text-darkPrimary uppercase tracking-wide mr-3">Vote</span>
