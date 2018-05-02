@@ -19,28 +19,57 @@ class Content extends React.Component {
       email: ``,
 		}
 	this._handleEmailChange = this._handleEmailChange.bind(this);
-	this._handleSubmit = this._handleSubmit.bind(this);
+	this._handleFormSubmit = this._handleFormSubmit.bind(this);
   }
 
   // Update state each time user edits their email address
-  _handleEmailChange = event => {
-    this.setState({ email: event.target.value })
+  _handleEmailChange = e => {
+    this.setState({ email: e.target.value })
   }
 
-	_handleSubmit = event => {
-    event.preventDefault;
-    addToMailchimp(email)
-    .then(data => {
-      // I recommend setting data to React state
-      // but you can do whatever you want
-      console.log(data)
+  // Post to MC server & handle its response
+  _postEmailToMailchimp = (email, attributes) => {
+    addToMailchimp(email, attributes)
+    .then(result => {
+      // Mailchimp always returns a 200 response
+      // So we check the result for MC errors & failures
+      if (result.result !== `success`) {
+        this.setState({
+          status: `error`,
+          msg: result.msg,
+        })
+      } else {
+        // Email address succesfully subcribed to Mailchimp
+        this.setState({
+          status: `success`,
+          msg: result.msg,
+        })
+      }
     })
-    .catch(() => {
-      // unnecessary because Mailchimp only ever
-      // returns a 200 status code
-      // see below for how to handle errors
+    .catch(err => {
+      // Network failures, timeouts, etc
+      this.setState({
+        status: `error`,
+        msg: err,
+      })
     })
   }
+
+  _handleFormSubmit = e => {
+    e.preventDefault()
+    e.stopPropagation()
+
+    this.setState({
+        status: `sending`,
+        msg: null,
+      },
+      // setState callback (subscribe email to MC)
+      this._postEmailToMailchimp(this.state.email, {
+        pathname: document.location.pathname,
+      })
+    )
+  }
+
 
 
 	render(){	
@@ -63,7 +92,6 @@ class Content extends React.Component {
 									method="post" 
 									data-netlify="true" data-netlify-honeypot="bot-field" 
 									className="w-full max-w-sm" 
-									onSubmit={this._handleSubmit(email)}
 								>
 								<input 
 									type="hidden" 
@@ -81,7 +109,7 @@ class Content extends React.Component {
 									<button 
 										className="flex-no-shrink text-lightPrimary font-bold py-2 px-4 rounded btn-hover shadow-2 btn-gradient" 
 										type="submit"
-										onSubmit={this._handleFormSubmit}
+										onClick={this._handleFormSubmit}
 									>
 										<span 
 											className="text-base xl:text-xl font-bold text-textIcons uppercase tracking-wide">
