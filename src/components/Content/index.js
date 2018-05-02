@@ -16,56 +16,59 @@ let email;
 
 class Content extends React.Component {
 	constructor() {
-		super()
-		this.state = {
+    super()
+    this.state = {
       email: ``,
     }
-	this._postEmailToMailchimp = this._postEmailToMailchimp.bind(this);
-	this._handleEmailChange = this._handleEmailChange.bind(this);
-	this._handleFormSubmit = this._handleFormSubmit.bind(this);
-	}
+  }
 
-	// david - update state when email changes
-	_handleEmailChange = event => {
-		this.setState({ email : event.target.value })
-	}
+  // Update state each time user edits their email address
+  _handleEmailChange = e => {
+    this.setState({ email: e.target.value })
+  }
 
-	// david - post to MC server and handle MC response
-	_postEmailToMailchimp = (email) => {
-		addToMailchimp(email)
-		.then(result => {
-			// david - mailchimp always returns a 200 response
-			if (result.result !== `success`) {
-				this.setState({
-					status: `error`,
-					msg: result.msg
-				})
-			} else {
-				this.setState({
-					status: `success`,
-					msg: result.msg
-				})
-			}
-		})
-		.catch(error => {
-			this.setState({
-				status: `error`,
-				msg: error,
-			})
-		})
-	}
+  // Post to MC server & handle its response
+  _postEmailToMailchimp = (email, attributes) => {
+    addToMailchimp(email, attributes)
+    .then(result => {
+      // Mailchimp always returns a 200 response
+      // So we check the result for MC errors & failures
+      if (result.result !== `success`) {
+        this.setState({
+          status: `error`,
+          msg: result.msg,
+        })
+      } else {
+        // Email address succesfully subcribed to Mailchimp
+        this.setState({
+          status: `success`,
+          msg: result.msg,
+        })
+      }
+    })
+    .catch(err => {
+      // Network failures, timeouts, etc
+      this.setState({
+        status: `error`,
+        msg: err,
+      })
+    })
+  }
 
-	_handleFormSubmit = e => {
-		
+  _handleFormSubmit = e => {
+    e.preventDefault()
+    e.stopPropagation()
 
-		this.setState({
-			status: `sending`,
-			msg: null,
-		},
-		this._postEmailToMailchimp(this.state.email)
-		)
-		e.preventDefault;
-	}
+    this.setState({
+        status: `sending`,
+        msg: null,
+      },
+      // setState callback (subscribe email to MC)
+      this._postEmailToMailchimp(this.state.email, {
+        pathname: document.location.pathname,
+      })
+    )
+  }
 
 	render(){	
 		return(
