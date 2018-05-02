@@ -101,7 +101,7 @@ class Content extends React.Component {
 									method="post" 
 									data-netlify="true" data-netlify-honeypot="bot-field" 
 									className="w-full max-w-sm" 
-									onSubmit={this._handleFormSubmit}
+									
 								>
 								<input 
 									type="hidden" 
@@ -119,7 +119,7 @@ class Content extends React.Component {
 									<button 
 										className="flex-no-shrink text-lightPrimary font-bold py-2 px-4 rounded btn-hover shadow-2 btn-gradient" 
 										type="submit"
-										
+										onSubmit={this._handleFormSubmit}
 									>
 										<span 
 											className="text-base xl:text-xl font-bold text-textIcons uppercase tracking-wide">
