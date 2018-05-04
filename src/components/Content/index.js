@@ -74,7 +74,7 @@ class Content extends React.Component {
 
 	render(){	
 		return(
-
+		<div>
 			<div className="flex flex-col antialiased">
 			
 				<div className="flex-col sm:flex sm:flex-row items-center justify-around container mx-auto px-4 py-8">
