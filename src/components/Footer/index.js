@@ -17,7 +17,7 @@ const Footer = () => (
     <p className="font-body text-textIcons text-xs xl:text-sm w-full leading-normal text-center"> © 2018 | All rights reserved | <a href="#" className="text-textIcons text-xs xl:text-sm w-full leading-normal text-center">Contact Us</a></p>
     <div className="flex-col justify-center py-4">
       <p className="font-body text-textIcons text-xs xl:text-sm leading-normal text-center">P.S. Are you a passionate android fan with a background in writing?</p>
-      <p className="font-body text-textIcons text-xs xl:text-sm leading-normal text-center">Shoot us an <a href="#" className="text-textIcons">email</a> some words about yourself and links to things you've written.</p>
+      <p className="font-body text-textIcons text-xs xl:text-sm leading-normal text-center">Shoot us an <a href="mailto:hello@theappex.com" className="text-textIcons">email</a> with some words about yourself and links to things you've written.</p>
       <p className="font-body text-textIcons text-xs xl:text-sm leading-normal text-center">We are always looking for the right contributors to join our growing team.</p>
     </div>
     
