@@ -10,9 +10,9 @@ import facebookSVG from "../../assets/icon-facebook.svg";
 const Footer = () => (
   <div className="p-3 bg-darkPrimary antialiased">
     <div className="flex justify-center container mx-auto px-4">
-      <a href="#"><img className="h-4 fill-current text-textIcons rounded m-2" src={twitterSVG}></img></a>
-      <a href="#"><img className="h-4 fill-current text-textIcons rounded m-2" src={mediumSVG}></img></a>
-      <a href="#"><img className="h-4 fill-current text-textIcons rounded m-2" src={facebookSVG}></img></a>
+      <a href="http://twitter.com/TheAppexHQ"><img className="h-4 fill-current text-textIcons rounded m-2" src={twitterSVG}></img></a>
+      <a href="http://medium.com/TheAppex"><img className="h-4 fill-current text-textIcons rounded m-2" src={mediumSVG}></img></a>
+      <a href="http://facebook.com/TheAppex"><img className="h-4 fill-current text-textIcons rounded m-2" src={facebookSVG}></img></a>
     </div>
     <p className="font-body text-textIcons text-xs xl:text-sm w-full leading-normal text-center"> © 2018 · All rights reserved · <a href="mailto:info@theappex.com" className="text-textIcons text-xs xl:text-sm w-full leading-normal text-center">Contact Us</a></p>
     <div className="flex-col justify-center py-4">
