@@ -40,11 +40,12 @@ class Template extends React.Component {
     return (
       <div>
         <Helmet
-          title="The Android Apps Project"
+          title="The Appex"
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'We review and recommend the best Android Apps so you can supercharge your smartphone experience.' },
+            { name: 'keywords', content: 'android, apps, google, android apps, smartphone, app' },
           ]}
+          
         />
         <Header />
         <div>

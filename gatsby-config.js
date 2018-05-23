@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'The Android Apps Project',
-    author: `The Android Apps Project`,
-    siteUrl: 'https://taap.netlify.com',
-    description: `The Best Android Apps. Reviewed.`
+    title: 'The Appex',
+    author: `The Appex`,
+    siteUrl: 'https://theappex.com',
+    description: `We review and recommend the best Android Apps so you can supercharge your smartphone experience.`
 
   },
   plugins: [
