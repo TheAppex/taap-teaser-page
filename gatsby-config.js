@@ -15,5 +15,23 @@ module.exports = {
         endpoint: `https://theappex.us18.list-manage.com/subscribe/post-json?u=06dcce05a26a15a3a08b2066e&amp;id=b71672f575`,
       },
     },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/assets/favicon.png",
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false
+        }
+      }
+    },
   ],
 };
