@@ -43,6 +43,7 @@ class Template extends React.Component {
           {/* General tags */}
           <meta name="description" content='We review and recommend the best Android Apps so you can supercharge your smartphone experience.' />
           <meta name="image" content={favicon} />
+          <link rel="shortcut icon" href={favicon} />
 
           {/* Schema.org tags */}
           
