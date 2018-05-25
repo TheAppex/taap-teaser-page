@@ -46,8 +46,6 @@ class Template extends React.Component {
         <Helmet>
           {/* Favicon */}
           <link rel="shortcut icon" href={favicon} />
-          
-         
 
           {/* Google / Search Engine Tags */} 
           <meta itemprop="name" content={siteTitle}/>
