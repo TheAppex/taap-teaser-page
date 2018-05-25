@@ -18,7 +18,7 @@ import Content from '../components/Content/index.js';
 import Team from '../components/Team/index.js';
 import Footer from '../components/Footer/index.js';
 
-
+import favicon from '../../src/assets/favicon.png'
 
 
 class Template extends React.Component {
@@ -39,14 +39,25 @@ class Template extends React.Component {
 
     return (
       <div>
-        <Helmet
-          title="The Appex"
-          meta={[
-            { name: 'description', content: 'We review and recommend the best Android Apps so you can supercharge your smartphone experience.' },
-            { name: 'keywords', content: 'android, apps, google, android apps, smartphone, app' },
-          ]}
+        <Helmet>
+          {/* General tags */}
+          <meta name="description" content='We review and recommend the best Android Apps so you can supercharge your smartphone experience.' />
+          <meta name="image" content={favicon} />
+
+          {/* Schema.org tags */}
           
-        />
+
+          {/* OpenGraph tags */}
+          <meta property="og:title" content='The Appex' />
+          <meta property="og:description" content='We review and recommend the best Android Apps so you can supercharge your smartphone experience.' />
+          <meta property="og:image" content={favicon} />
+
+          {/* Twitter Card tags */}
+          <meta name="twitter:title" content='The Appex' />
+          <meta name="twitter:description" content='We review and recommend the best Android Apps so you can supercharge your smartphone experience.' />
+          <meta name="twitter:image" content={favicon} />
+        </Helmet>
+        
         <Header />
         <div>
           {children()}
