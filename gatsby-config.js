@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'The Appex',
+    title: 'The Appex - Discover the best of the best Android Apps',
     author: `The Appex`,
     siteUrl: 'https://theappex.com',
     description: `We review and recommend the best Android Apps so you can supercharge your smartphone experience.`
