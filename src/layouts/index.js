@@ -19,6 +19,7 @@ import Team from '../components/Team/index.js';
 import Footer from '../components/Footer/index.js';
 
 import favicon from '../../src/assets/favicon.png'
+import shareImage from '../../src/assets/social-media-sharing.png'
 
 
 class Template extends React.Component {
@@ -36,27 +37,29 @@ class Template extends React.Component {
   render() {
     const { location, children } = this.props
     let header
+    const siteTitle = this.props.data.site.siteMetadata.title
+    const siteDescription = this.props.data.site.siteMetadata.description
 
     return (
       <div>
         <Helmet>
           {/* General tags */}
-          <meta name="description" content='We review and recommend the best Android Apps so you can supercharge your smartphone experience.' />
-          <meta name="image" content={favicon} />
+          <meta name="description" content={siteDescription} />
+          <meta name="image" content={shareImage} />
           <link rel="shortcut icon" href={favicon} />
 
           {/* Schema.org tags */}
           
 
           {/* OpenGraph tags */}
-          <meta property="og:title" content='The Appex' />
-          <meta property="og:description" content='We review and recommend the best Android Apps so you can supercharge your smartphone experience.' />
-          <meta property="og:image" content={favicon} />
+          <meta property="og:title" content={siteTitle} />
+          <meta property="og:description" content={siteDescription} />
+          <meta property="og:image" content={shareImage} />
 
           {/* Twitter Card tags */}
-          <meta name="twitter:title" content='The Appex' />
-          <meta name="twitter:description" content='We review and recommend the best Android Apps so you can supercharge your smartphone experience.' />
-          <meta name="twitter:image" content={favicon} />
+          <meta name="twitter:title" content={siteTitle} />
+          <meta name="twitter:description" content={siteDescription} />
+          <meta name="twitter:image" content={shareImage} />
         </Helmet>
         
         <Header />
@@ -76,6 +79,17 @@ class Template extends React.Component {
 }
 
 export default Template
+
+export const pageQuery = graphql`
+    query PageQuery {
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }
+    }
+`
 
 // const TemplateWrapper = ({ children }) => (
   
