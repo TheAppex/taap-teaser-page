@@ -39,27 +39,34 @@ class Template extends React.Component {
     let header
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteDescription = this.props.data.site.siteMetadata.description
+    const siteUrl = this.props.data.site.siteUrl
 
     return (
       <div>
         <Helmet>
-          {/* General tags */}
-          <meta name="description" content={siteDescription} />
-          <meta name="image" content={shareImage} />
+          {/* Favicon */}
           <link rel="shortcut icon" href={favicon} />
-
-          {/* Schema.org tags */}
           
+         
 
-          {/* OpenGraph tags */}
-          <meta property="og:title" content={siteTitle} />
-          <meta property="og:description" content={siteDescription} />
-          <meta property="og:image" content={shareImage} />
+          {/* Google / Search Engine Tags */} 
+          <meta itemprop="name" content={siteTitle}/>
+          <meta itemprop="description" content={siteDescription}/>
+          <meta itemprop="image" content={shareImage}/>
 
-          {/* Twitter Card tags */}
-          <meta name="twitter:title" content={siteTitle} />
-          <meta name="twitter:description" content={siteDescription} />
-          <meta name="twitter:image" content={shareImage} />
+          {/* Facebook Meta Tags */} 
+          <meta property="og:url" content={siteUrl}/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:title" content={siteTitle}/>
+          <meta property="og:description" content={siteDescription}/>
+          <meta property="og:image" content={shareImage}/>
+
+          {/* Twitter Meta Tags */}
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:title" content={siteTitle}/>
+          <meta name="twitter:description" content={siteDescription}/>
+          <meta name="twitter:image" content={shareImage}/>
+
         </Helmet>
         
         <Header />
@@ -86,6 +93,7 @@ export const pageQuery = graphql`
             siteMetadata {
                 title
                 description
+                siteUrl
             }
         }
     }
