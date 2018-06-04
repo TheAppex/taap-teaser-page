@@ -148,7 +148,7 @@ class Content extends React.Component {
 							<div>
 								<a className="p-2 bg-lightPrimary hover:bg-primary items-center text-darkPrimary hover:text-textIcons leading-none rounded-full flex lg:inline-flex mt-2 shadow-2 no-underline"  role="alert" href="https://trello.com/b/n6mTFQ9J" target="_blank">
 									<span className="flex rounded-full bg-textIcons px-2 py-1 text-xs xl:text-base font-bold text-darkPrimary uppercase tracking-wide mr-3">Vote</span>
-									<span className="font-body font-semibold mr-2 text-sm xl:text-base text-left flex-auto">Tell us which category you want reviewed</span>
+									<span className="font-body font-semibold mr-2 text-sm xl:text-base text-left flex-auto">Tell us on Trello which category you want reviewed</span>
 									<svg className="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
 								</a>
 							</div>
@@ -164,7 +164,7 @@ class Content extends React.Component {
 
 			
 			<div className="flex items-center justify-center py-8 my-8 text-center w-full container mx-auto px-4">
-				<p className="text-primaryText text-lg xl:text-xl font-body text-center leading-normal" data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">Can't wait? Here's a <a href="#" className="text-darkPrimary hover:text-primary leading-normal">sneak peek</a> article on Medium.</p>
+				<p className="text-primaryText text-lg xl:text-xl font-body text-center leading-normal" data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">Can't wait? Here's a <a href="https://medium.com/theappex" className="text-darkPrimary hover:text-primary leading-normal" target="_blank">sneak peek</a> article on Medium.</p>
 			</div>
 			<div className="flex-col sm:flex sm:flex-row sm:items-center content-around py-8 my-8 container mx-auto px-4">
 				<div className="px-8 my-auto sm:w-1/2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
