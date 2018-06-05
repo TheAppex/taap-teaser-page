@@ -1,7 +1,7 @@
 import React from 'react';
 
 // david - importing our company logo
-import logo from "../assets/Logo.svg";
+import logo from "../assets/final-logo-words.svg";
 
 const IndexPage = () => (
   <div className="my-8 flex items-center flex-wrap justify-center antialiased" data-aos="fade" data-aos-duration="1200" data-aos-delay="100" data-aos-once="true">
