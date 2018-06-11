@@ -8,7 +8,7 @@ const IndexPage = () => (
     <img className="container mx-auto px-8 py-4 max-h-100" src={logo}></img>    
     <div className="container mx-auto py-8 px-6">
       <p className="text-primaryText text-center leading-normal text-xl  md:text-2xl lg:text-2xl xl:text-3xl font-title font-bold">Supercharge your Android experience.</p>
-      <p className="text-primaryText text-center leading-normal text-lg  md:text-xl lg:text-xl xl:text-2xl font-title font-bold">We hand select the top apps for you.</p>
+      <p className="text-primaryText text-center leading-normal text-lg  md:text-xl lg:text-xl xl:text-2xl font-title font-bold">We hand select the best apps.</p>
     </div>
   </div>
 );
