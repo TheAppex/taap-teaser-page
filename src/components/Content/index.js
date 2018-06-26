@@ -164,7 +164,7 @@ class Content extends React.Component {
 
 			
 			<div className="flex items-center justify-center py-8 my-8 text-center w-full container mx-auto px-4">
-				<p className="text-primaryText text-lg xl:text-xl font-body text-center leading-normal" data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">Can't wait? Here's a <a href="https://medium.com/theappex" className="text-darkPrimary hover:text-primary leading-normal" target="_blank">sneak peek</a> article on Medium.</p>
+				<p className="text-primaryText text-lg xl:text-xl font-body text-center leading-normal" data-aos="fade" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">Can't wait? Here's a <a href="http://tappx.co/BestPodcastApp" className="text-darkPrimary hover:text-primary leading-normal" target="_blank">sneak peek</a> article on Medium.</p>
 			</div>
 			<div className="flex-col sm:flex sm:flex-row sm:items-center content-around py-8 my-8 container mx-auto px-4">
 				<div className="px-8 my-auto sm:w-1/2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
