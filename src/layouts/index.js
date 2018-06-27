@@ -44,6 +44,8 @@ class Template extends React.Component {
     return (
       <div>
         <Helmet>
+          <title> {siteTitle} </title>
+          <meta name="description" content={siteDescription}/>
           {/* Favicon */}
           <link rel="shortcut icon" href={favicon} />
 
