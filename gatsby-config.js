@@ -19,7 +19,7 @@ module.exports = {
             //       'yoursite.com'
             //   ]
           }
-      }
+      },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
