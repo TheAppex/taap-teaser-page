@@ -7,6 +7,19 @@ module.exports = {
 
   },
   plugins: [
+      {
+          resolve: 'gatsby-plugin-fathom',
+          options: {
+              // Fathom server URL. Defaults to `cdn.usefathom.com`
+            //   trackingUrl: 'your-fathom-instance.com',
+              // Unique site id
+              siteId: 'PDTWGZBY',
+              // Domain whitelist
+            //   whitelistHostnames: [
+            //       'yoursite.com'
+            //   ]
+          }
+      }
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
